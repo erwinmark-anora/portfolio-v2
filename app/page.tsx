@@ -15,7 +15,7 @@ export default function Home() {
         <Experience />
       </section>
 
-      <section id="projects" className="scroll-mt-20">
+      <section id="projects" className="scroll-mt-20 mb-60">
         <Projects />
       </section>
 

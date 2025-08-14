@@ -28,7 +28,7 @@ const Testimonials: React.FunctionComponent = () => {
           Testimonials
         </h2>
         
-        <div className='flex space-x-6'>
+        <div className='flex flex-col lg:flex-row gap-6'>
           {testimonials.map((item, idx) => (
             <TestimonialCard testimonial={item} key={idx} />
           ))}

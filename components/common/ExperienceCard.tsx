@@ -14,8 +14,8 @@ const ExperienceCard: React.FunctionComponent<IExperienceCardProps> = ({ experie
       </div>
 
       <div className="flex-1">
-        <div className="flex space-x-2 items-center">
-          <h6 className=" font-normal text-xl">{experience.title}</h6>
+        <div className="flex flex-col lg:flex-row space-x-2 align-baseline items-start">
+          <h6 className="font-normal text-xl">{experience.title}</h6>
           <span className="text-primary-light text-xl mt-1 lg:mt-0">@{experience.company}</span>
         </div>
 

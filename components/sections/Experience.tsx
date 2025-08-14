@@ -1,7 +1,7 @@
 'use client'
 
 import { IExperience } from '@/lib/types';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import ExperienceCard from '@/components/common/ExperienceCard';
 import LinkButton from '@/components/ui/LinkButton';
 import Link from 'next/link';
@@ -61,10 +61,6 @@ const Experience: React.FunctionComponent = () => {
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  useEffect(() => {
-    const currentHash = window.location.hash;
-  }, []);
-
   return (
     <div className="min-h-screen flex items-center justify-center ">
       <div className="max-w-5xl mx-auto">
@@ -72,7 +68,7 @@ const Experience: React.FunctionComponent = () => {
           <Link 
             href="#experiences"
             className={`text-primary-light text-7xl font-bold mr-1 hover:text-accent transition-colors duration-300 cursor-pointer ${activeSection === '#experiences' ? 'text-accent' : ''}`}
-            onClick={(e) => {
+            onClick={() => {
               setActiveSection('#experiences');
             }}
           >
