@@ -47,17 +47,37 @@ const About: React.FunctionComponent = () => {
         </div>
 
         <div className="flex flex-col items-center lg:items-start gap-6">
-          <div className="flex lg:flex-col space-x-4 space-y-4 mt-4 text-white text-2xl">
-            <a href="https://github.com/solomon0918" target="_blank" rel="noopener noreferrer">
+          <div className="flex lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 mt-4 text-white text-2xl">
+            <a 
+              href="https://github.com/solomon0918" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-gray-300 hover:-translate-y-1"
+            >
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/erwin-mark-anora/" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://www.linkedin.com/in/erwin-mark-anora/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-blue-400 hover:-translate-y-1"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com/erwin.mark.75" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://www.facebook.com/erwin.mark.75" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-blue-600 hover:-translate-y-1"
+            >
               <FaFacebook />
             </a>
-            <a href="https://www.instagram.com/nuevosapientum/" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://www.instagram.com/nuevosapientum/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-pink-400 hover:-translate-y-1"
+            >
               <FaInstagram />
             </a>
           </div>
