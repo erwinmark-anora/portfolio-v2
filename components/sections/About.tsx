@@ -3,7 +3,7 @@
 import * as React from 'react';
 import LinkButton from '../ui/LinkButton';
 import { ReactTyped } from 'react-typed';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const About: React.FunctionComponent = () => {
   return (
@@ -64,21 +64,11 @@ const About: React.FunctionComponent = () => {
             >
               <FaLinkedin />
             </a>
-            <a 
-              href="https://www.facebook.com/erwin.mark.75" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-blue-600 hover:-translate-y-1"
+            <a
+              href="mailto:erwinmark.anora@gmail.com"
+              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-gray-300 hover:-translate-y-1"
             >
-              <FaFacebook />
-            </a>
-            <a 
-              href="https://www.instagram.com/nuevosapientum/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-pink-400 hover:-translate-y-1"
-            >
-              <FaInstagram />
+              <FaEnvelope />
             </a>
           </div>
         </div>

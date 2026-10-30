@@ -65,7 +65,7 @@ Quick reference (from resume v2, Oct 31):
   - Keep one footer. Make the year automatic (current year).
   - Done when: only one footer shows, with the right year.
 
-- [ ] **Task 2 — Clean up social links**
+- [x] **Task 2 — Clean up social links**
   - Remove Facebook and Instagram.
   - Keep GitHub and LinkedIn. Add a work email link if there isn't one.
   - Done when: only professional links show.
@@ -150,3 +150,4 @@ Quick reference (from resume v2, Oct 31):
 _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers, year now automatic.`_
 
 - 2026-10-31 - Task 1 - removed the "© 2024" mobile menu footer, main footer now "© {current year} Erwin Mark Añora".
+- 2026-10-31 - Task 2 - removed Facebook and Instagram icons, kept GitHub and LinkedIn, added an email icon (mailto:erwinmark.anora@gmail.com).
