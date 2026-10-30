@@ -16,20 +16,21 @@ const Experience: React.FunctionComponent = () => {
       description: [
         'Own end-to-end development of a social-services / benefits web application using Laravel and JavaScript/jQuery, from feature design through deployment.',
         'Work across four concurrent team projects, contributing to and unblocking multiple Laravel codebases beyond primary ownership, including an internal license-management system built with Laravel and Livewire.',
-        'Integrated AI-assisted development into my workflow using Claude, authoring reusable skills, workflow examples, and CLAUDE.md conventions for faster, more consistent delivery.'
+        'Integrated AI-assisted development into my workflow using Claude Code, authoring reusable skills, workflow examples, and CLAUDE.md conventions for faster, more consistent delivery.'
       ],
-      technologies: ['Laravel', 'Livewire', 'JavaScript', 'jQuery', 'Claude']
+      technologies: ['Laravel', 'Livewire', 'JavaScript', 'jQuery', 'Claude Code']
     },
     {
-      title: "Front-end Developer ( Currently Full-stack )",
-      company: "Cloudswyft",
+      title: "Senior Full-Stack Engineer",
+      company: "Cloudswyft Global Systems",
+      workType: "Concurrent role",
       duration: "Oct 2022 - Present",
       description: [
-        'Began by creating the front-end of ICEI (Indonesia Cyber Education Institute) from scratch, designing an intuitive and responsive user interface for the Learning Management System (LMS) built on the edX platform. As the project evolved, so did my role, transitioning into a full-stack position. I now work with a tech stack that includes Python, Django, and jQuery, contributing to both the front-end and back-end development.',
-        'My focus is on identifying and fixing bugs, optimizing performance, and improving the overall user experience across the platform. We work collaboratively to address issues, ensuring the system functions smoothly and efficiently for users, while continuously refining its functionality and usability.',
-        'In addition, I also support Cloudswyft, helping to identify and resolve software bugs and enhance system performance. Through these experiences, we’ve developed a strong, collaborative approach to development, ensuring high-quality, reliable experiences for all users.'
+        'Built the front-end of ICEI\'s Open edX learning platform, which served 30,000+ active learners.',
+        'Sole developer of Cloudswyft\'s own learning platform (Open edX Sumac, Python/Django, React micro-frontends), currently in development, using an AI-assisted SDLC with Claude Code; supervise 4–5 interns building features for it.',
+        'Maintained ICEI\'s production platform: fixed client-reported issues across the Python/Django and React codebases and resolved Xendit payment and enrollment edge cases, working with DevOps.'
       ],
-      technologies: ['Python', 'ReactJS', 'TailwindCSS', 'Javascript']
+      technologies: ['Open edX', 'Python', 'Django', 'React', 'Xendit', 'Claude Code']
     },
     {
       title: "Full-stack Web Developer",

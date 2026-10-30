@@ -75,7 +75,7 @@ Quick reference (from resume v2, Oct 31):
 - [x] **Task 3 — Rewrite headline + About**
   - Current headline sells "clean UI" → change to full-stack, Laravel-first.
   - Base the About on the resume **Summary**. Mention both current jobs and the real stack.
-  - Add one sentence on how I work: AI-assisted SDLC with Claude (planning, building, deployment, maintenance), with me reviewing and owning the code. Laravel/full-stack stays the main message — AI is *how* I work, not *what* I am.
+  - Add one sentence on how I work: AI-assisted SDLC with Claude Code (planning, building, deployment, maintenance), with me reviewing and owning the code. Laravel/full-stack stays the main message — AI is *how* I work, not *what* I am.
   - Max 4 sentences. Follow Writing rules.
   - Done when: someone reading only the top of the page knows "full-stack, Laravel, 10+ years, two current roles".
 
@@ -84,7 +84,7 @@ Quick reference (from resume v2, Oct 31):
   - Tags must match the bullets (Laravel, Livewire, GitHub Actions…).
   - Done when: Born Malta shows first, same title and dates as the resume.
 
-- [ ] **Task 5 — Rewrite the Cloudswyft entry**
+- [x] **Task 5 — Rewrite the Cloudswyft entry**
   - Copy title (per Senior decision), dates and bullets from `resume.md`. Max 3 bullets — keep 30,000+ learners and Xendit.
   - Fix tags so they match the bullets (Python, Django, React, Open edX…).
   - Done when: same title and dates as the resume, no vague lines left.
@@ -116,7 +116,7 @@ Quick reference (from resume v2, Oct 31):
 
 - [ ] **Task 9 — Add a Skills section**
   - Site has no skills section, only tags. Add a simple one, grouped: Back-end / Front-end / DevOps / Platforms.
-  - Use the Skills list from `resume.md` only (do `RESUME_CHECKLIST.md` Task 3 first). Includes **AI-assisted SDLC (Claude)**.
+  - Use the Skills list from `resume.md` only (do `RESUME_CHECKLIST.md` Task 3 first). Includes **AI-assisted SDLC (Claude Code)**.
   - Done when: a recruiter can see the full stack in 5 seconds.
 
 - [ ] **Task 9a — Add a short "How I work" section (AI-assisted SDLC)**
@@ -155,3 +155,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 2 - removed Facebook and Instagram icons, kept GitHub and LinkedIn, added an email icon (mailto:erwinmark.anora@gmail.com).
 - 2026-10-31 - Task 3 - new Laravel-first headline and typed roles, About rewritten in 4 sentences (10+ years, Born Malta contract + Cloudswyft, AI-assisted SDLC with Claude).
 - 2026-10-31 - Task 4 - added Born Malta (via Webee) as the top job: Full-Stack Developer, "Contract · Concurrent role", Sep 2025 - Present, 3 resume bullets (end-to-end app, 4 team projects, Claude workflow), tags Laravel/Livewire/JavaScript/jQuery/Claude; ExperienceCard now shows the workType label.
+- 2026-10-31 - Task 5 - Cloudswyft entry now "Senior Full-Stack Engineer", Cloudswyft Global Systems, "Concurrent role", Oct 2022 - Present; 3 Facts-confirmed bullets (ICEI front-end, 30,000+ learners, past tense; sole developer of own platform + 4-5 interns; ICEI maintenance + Xendit); tags Open edX/Python/Django/React/Xendit.

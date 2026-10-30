@@ -60,9 +60,10 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 - Born Malta integrations: ✅ yes — keep it **non-specific**: "external APIs and third-party accounting software". No client, government or product names.
 - Born Malta app: ✅ keep as "social-services web application" — don't say government.
 - Born Malta Azure: not sure → **leave out** unless confirmed.
-- Born Malta AI: ✅ company provides Claude; I use **my own workflow** (not team-wide). Term: **AI-assisted SDLC** — Claude for planning, building, deployment and maintenance.
+- Born Malta AI: ✅ company provides Claude; I use **Claude Code** with **my own workflow** (not team-wide). Term: **AI-assisted SDLC** — Claude Code for planning, building, deployment and maintenance.
 - Cloudswyft interns supervised: ✅ **4–5**
 - Cloudswyft's own LMS: ✅ in development, staging only → **no link**. Working name "OrbIT LMS" is **not final → don't name it**; say "Cloudswyft's own learning platform". Stack: **Open edX (Sumac), Python/Django, React micro-frontends (MFEs)**. Role: **sole developer** (1 DevOps teammate).
+- Cloudswyft AI: ✅ same AI-assisted SDLC as Born Malta (Claude Code for planning, building, deployment and maintenance), my own workflow on my personal Claude account (Claude Code). Mention on Cloudswyft's own-platform bullet only.
 - ICEI: ✅ **completely finished**, client has since rebranded. All ICEI bullets → **past tense**. "now supporting 30,000+" → "served 30,000+".
 - Offshorly team: ✅ **4 developers (2 back-end, 2 front-end)**, I was the full-stack lead
 - Contractor clients: ✅ **5** (the 5 named in the resume)
@@ -109,7 +110,7 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 
 - [ ] **Task 3 — Update Skills (biggest gap)**
   - Put current tools first: Laravel, Livewire, PHP, Python/Django, Vue, React, Next.js, TypeScript.
-  - Add missing: **Livewire, Filament, PostgreSQL, MySQL, GitHub Actions, Open edX, Stripe/Xendit, AI-assisted SDLC (Claude)** (+ Azure if true). Livewire, GitHub Actions and Xendit are already in your bullets but not in Skills.
+  - Add missing: **Livewire, Filament, PostgreSQL, MySQL, GitHub Actions, Open edX, Stripe/Xendit, AI-assisted SDLC (Claude Code)** (+ Azure if true). Livewire, GitHub Actions and Xendit are already in your bullets but not in Skills.
   - Remove or shrink: Gatsby, AngularJS, Material UI, Adobe XD.
   - Fix: **"Bitbucker" → "Bitbucket"**, "Typescript" → "TypeScript", "Github" → "GitHub".
   - Done when: skills match what's in the bullets, no typos.
@@ -121,7 +122,7 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
   1. Own end-to-end development of a social-services web application (Laravel, JavaScript), from feature design to deployment.
   2. Build and maintain integrations with external APIs and third-party accounting software.
   3. Contribute to 4 other Laravel projects, including a license-management system built with Livewire.
-  4. Apply an AI-assisted SDLC with Claude across planning, building, deployment and maintenance, using my own reusable prompts and project rules; I review and own all code that ships.
+  4. Apply an AI-assisted SDLC with Claude Code across planning, building, deployment and maintenance, using my own reusable prompts and project rules; I review and own all code that ships.
   5. Manage CI/CD pipelines with GitHub Actions.
 
   **Offshorly (full rewrite)**
