@@ -6,6 +6,19 @@ import Link from 'next/link';
 const Projects: React.FunctionComponent = () => {
   const projects: IProject[] = useMemo(() => [
     {
+      title: "Gintanao",
+      image: "/images/projects/gintanao-stack.png",
+      status: "In development",
+      featured: true,
+      description: "A real estate listing portal for Davao City. Buyers search homes for sale, view full listing details and photos, and contact the listing agent directly.",
+      highlights: [
+        "Built the Next.js front-end: home page, property search with filters, and listing pages with photo galleries.",
+        "Built the Laravel back-end and API, with a Filament admin panel for managing listings.",
+        "Added agent contact options on each listing (Messenger, WhatsApp, Viber, call, viewing requests) and a home loan calculator.",
+      ],
+      technologies: ["Next.js", "Laravel", "Filament"],
+    },
+    {
       title: "ICEI (Indonesia Cyber Education Institute)",
       image: "/images/projects/ICE ( Indonesia Cyber Education Institute ).png",
       description: "A comprehensive Learning Management System (LMS) designed to facilitate online education. Built on the robust edX platform, ICEI supports various user roles, including learners, instructors (dosen), partners (mitra), and administrators. The system is designed to provide a seamless educational experience, allowing learners to enroll in courses offered by various partner institutions.",

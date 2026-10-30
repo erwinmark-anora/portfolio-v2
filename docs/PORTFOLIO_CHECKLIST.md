@@ -97,7 +97,7 @@ Quick reference (from resume v2, Oct 31):
 
 ### Projects
 
-- [ ] **Task 7 — Add the real estate portal as project #1**
+- [x] **Task 7 — Add the real estate portal as project #1**
   - New project card at the top: **Gintanao** — Davao real estate listing portal. Next.js front-end, Laravel + Filament back-end and API. Label: **"In development"** (portal facts are in `RESUME_CHECKLIST.md`).
   - Show it as a **case study**: what it does, stack, 2–3 screenshots (taken from local), 2–3 things I built.
   - **No link** until live — gintanao.com is only a coming-soon page. **No GitHub link — the repo stays private** (business).
@@ -157,3 +157,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 4 - added Born Malta (via Webee) as the top job: Full-Stack Developer, "Contract · Concurrent role", Sep 2025 - Present, 3 resume bullets (end-to-end app, 4 team projects, Claude workflow), tags Laravel/Livewire/JavaScript/jQuery/Claude; ExperienceCard now shows the workType label.
 - 2026-10-31 - Task 5 - Cloudswyft entry now "Senior Full-Stack Engineer", Cloudswyft Global Systems, "Concurrent role", Oct 2022 - Present; 3 Facts-confirmed bullets (ICEI front-end, 30,000+ learners, past tense; sole developer of own platform + 4-5 interns; ICEI maintenance + Xendit); tags Open edX/Python/Django/React/Xendit.
 - 2026-10-31 - Task 6 - Offshorly now "Full-Stack Developer" with 2 Facts-confirmed bullets (AuctionTale MVP, team of 4), tags Laravel/Vue; California Ticket King + SBHE merged into one "Independent Full-Stack Contractor", "Freelance / Contract", 2018 - 2023 entry (5 clients, CTK Stripe portal + dashboard, SBHE AngularJS + Laravel APIs).
+- 2026-10-31 - Task 7 - added Gintanao as project #1: "In development" label, 2-sentence description, 3 "built" bullets, tags Next.js/Laravel/Filament, stacked 3-page screenshot, no link; ProjectCard now supports status + highlights.

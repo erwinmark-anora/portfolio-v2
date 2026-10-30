@@ -14,14 +14,14 @@ interface IProjectCardProps {
 const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) => {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-8 py-6 items-center ">
-      <div className="lg:w-130 flex-shrink-0 mb-6 lg:mb-0">
-        <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+      <div className={`${project.featured ? 'lg:w-150' : 'lg:w-130'} flex-shrink-0 mb-6 lg:mb-0`}>
+        <div className={`${project.featured ? 'aspect-[3/2]' : 'aspect-video'} bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700`}>
           {project.image ? (
             <Image
               src={project.image}
               alt={`${project.title} screenshot`}
-              width={440}
-              height={260}
+              width={project.featured ? 600 : 440}
+              height={project.featured ? 400 : 260}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               loading="lazy"
               onError={(e) => {
@@ -49,7 +49,22 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) =>
           )}
         </div>
 
+        {project.status && (
+          <p className="mt-1 text-sm font-thin uppercase">{project.status}</p>
+        )}
+
         <p>{project.description}</p>
+
+        {project.highlights && (
+          <ul className="mt-3 space-y-2">
+            {project.highlights.map((item, idx) => (
+              <li key={idx} className="relative pl-5">
+                <span className="absolute left-0 top-2 w-2 h-2 bg-white rounded-full"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
 
         <div className="flex flex-wrap gap-6 mt-4">
           {project.technologies.map((tech, idx) => (

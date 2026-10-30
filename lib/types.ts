@@ -13,6 +13,9 @@ export interface IProject {
   description: string;
   technologies: string[];
   link?: string;
+  status?: string;
+  highlights?: string[];
+  featured?: boolean;
 }
 
 export interface ITestimonial {
