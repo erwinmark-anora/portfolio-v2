@@ -19,6 +19,10 @@ const ExperienceCard: React.FunctionComponent<IExperienceCardProps> = ({ experie
           <span className="text-primary-light text-xl mt-1 lg:mt-0">@{experience.company}</span>
         </div>
 
+        {experience.workType && (
+          <p className="mt-1 text-sm font-thin uppercase">{experience.workType}</p>
+        )}
+
         <ul className="mt-3 space-y-2">
           {experience.description.map((desc, idx) => (
             <li key={idx} className="text-lg relative pl-5">

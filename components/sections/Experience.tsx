@@ -9,6 +9,18 @@ import Link from 'next/link';
 const Experience: React.FunctionComponent = () => {
   const experiences: IExperience[] = useMemo(() => [
     {
+      title: "Full-Stack Developer",
+      company: "Born Malta (via Webee)",
+      workType: "Contract · Concurrent role",
+      duration: "Sep 2025 - Present",
+      description: [
+        'Own end-to-end development of a social-services / benefits web application using Laravel and JavaScript/jQuery, from feature design through deployment.',
+        'Work across four concurrent team projects, contributing to and unblocking multiple Laravel codebases beyond primary ownership, including an internal license-management system built with Laravel and Livewire.',
+        'Integrated AI-assisted development into my workflow using Claude, authoring reusable skills, workflow examples, and CLAUDE.md conventions for faster, more consistent delivery.'
+      ],
+      technologies: ['Laravel', 'Livewire', 'JavaScript', 'jQuery', 'Claude']
+    },
+    {
       title: "Front-end Developer ( Currently Full-stack )",
       company: "Cloudswyft",
       duration: "Oct 2022 - Present",

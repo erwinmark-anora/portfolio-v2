@@ -79,7 +79,7 @@ Quick reference (from resume v2, Oct 31):
   - Max 4 sentences. Follow Writing rules.
   - Done when: someone reading only the top of the page knows "full-stack, Laravel, 10+ years, two current roles".
 
-- [ ] **Task 4 — Add Born Malta as the top job**
+- [x] **Task 4 — Add Born Malta as the top job**
   - Copy title, label (Contract, concurrent), dates and bullets from `resume.md`. Max 3 bullets on the site — pick the strongest. **One of the 3 must be the AI-assisted SDLC bullet.**
   - Tags must match the bullets (Laravel, Livewire, GitHub Actions…).
   - Done when: Born Malta shows first, same title and dates as the resume.
@@ -154,3 +154,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 1 - removed the "© 2024" mobile menu footer, main footer now "© {current year} Erwin Mark Añora".
 - 2026-10-31 - Task 2 - removed Facebook and Instagram icons, kept GitHub and LinkedIn, added an email icon (mailto:erwinmark.anora@gmail.com).
 - 2026-10-31 - Task 3 - new Laravel-first headline and typed roles, About rewritten in 4 sentences (10+ years, Born Malta contract + Cloudswyft, AI-assisted SDLC with Claude).
+- 2026-10-31 - Task 4 - added Born Malta (via Webee) as the top job: Full-Stack Developer, "Contract · Concurrent role", Sep 2025 - Present, 3 resume bullets (end-to-end app, 4 team projects, Claude workflow), tags Laravel/Livewire/JavaScript/jQuery/Claude; ExperienceCard now shows the workType label.
