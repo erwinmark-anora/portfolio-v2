@@ -3,7 +3,7 @@ const Footer: React.FunctionComponent = () => {
 
   return (
     <footer className="max-w-7xl mx-auto py-4">
-      <p className="text-center">&copy; {currentYear} Erwin Mark Anora E-Portfolio version 2.0</p>
+      <p className="text-center">&copy; {currentYear} Erwin Mark Añora</p>
     </footer>
   );
 };

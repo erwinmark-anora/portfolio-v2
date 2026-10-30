@@ -250,13 +250,6 @@ const Navbar: React.FunctionComponent = () => {
               })}
             </ul>
           </nav>
-
-          {/* Mobile Menu Footer */}
-          <div className="p-6 border-t border-gray-700">
-            <p className="text-gray-400 text-sm text-center">
-              © 2024 Erwin Mark Añora
-            </p>
-          </div>
         </div>
       </div>
     </>
