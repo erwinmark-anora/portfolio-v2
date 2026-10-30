@@ -1,0 +1,129 @@
+# Portfolio Redesign Checklist
+
+Site: https://erwinmarkanora.vercel.app/ (Next.js on Vercel)
+
+## How to use this file
+
+- **One task = one new Claude session.** Don't do two tasks in one session.
+- Start every session with this prompt (change the task number):
+
+  > Read `REDESIGN_CHECKLIST.md` (Order, Design brief, Design rules), then do **Task N only**. Use content only from `content` data file (Task 2) — don't rewrite any text. When done, show me what changed, then tick the box and add one line to the **Log**.
+
+- Work on a separate branch: `git checkout -b redesign`. Merge to main only at Task 11.
+- Commit after each task.
+
+---
+
+## Order (do these files in this sequence)
+
+1. **`RESUME_CHECKLIST.md`** — the resume is the source of truth for all text.
+2. **`PORTFOLIO_CHECKLIST.md`** — fixes the content on the current design and deploys it. This gives you a correct, live site **before** the redesign starts.
+3. **This file** — rebuilds the look using the already-correct content.
+
+Why this order: the redesign is the part most likely to drag on. If it does, the content-fixed site is already live and good enough to apply with.
+
+**Deadline:** `____` (suggest **Jan 5**). If the redesign isn't done by then, apply with the content-fixed site and finish the redesign later. Don't delay applications for it.
+
+---
+
+## Design brief (fill in at Task 1)
+
+- **Who it's for:** recruiters and hiring managers. They spend ~10 seconds. They need: name, role, stack, current jobs, best projects, resume, contact.
+- **Positioning:** Full-stack developer, Laravel-first, 10+ years. (Role-level rule: see `RESUME_CHECKLIST.md`.)
+- **Style:** `____` (e.g. clean/minimal, bold, dark tech)
+- **3 portfolios I like (links):** `____`
+- **Accent color:** `____` (one only)
+- **Fonts:** `____` (max 2: one for headings, one for body)
+- **Dark mode:** `____` (yes / no / follow system)
+- **Keep from current site:** `____` (e.g. logo)
+
+---
+
+## Design rules (every session follows these)
+
+- **Name, title, one-line summary, "Download Resume" and "Contact" are visible without scrolling** on desktop and phone.
+- Easy to skim: clear section headings, short text, lots of space.
+- Max 2 fonts, 1 accent color.
+- **No splash screens, loading animations or heavy effects.** Small hover/fade effects only, and turned off when the user has "reduce motion" on.
+- All text is real text (not images), so search engines and screen readers can read it.
+- Works on phone width first (360px), then desktop.
+- No text changes during the redesign. Content comes only from the content data file.
+
+---
+
+## Tasks
+
+### Setup
+
+- [ ] **Task 1 — Fill the design brief**
+  - Erwin shares 3 portfolios he likes. Claude describes what they have in common and proposes 2 directions (style, color, fonts) in a few lines each.
+  - Erwin picks one. Claude fills the **Design brief** above.
+  - No code. Done when: every brief blank is filled.
+
+- [ ] **Task 2 — Move all content into one data file**
+  - Put all site text (About, jobs, projects, skills, links, testimonials) into one file, e.g. `src/content/portfolio.ts`.
+  - Components read from this file. **The site must look exactly the same after this task.**
+  - Why: the redesign can change every component without losing or retyping content.
+  - Done when: no text is hard-coded in components; site looks unchanged.
+
+### Foundation
+
+- [ ] **Task 3 — Design tokens**
+  - Set colors, fonts, font sizes, spacing and border radius in one place (Tailwind config / CSS variables), from the brief.
+  - Add dark mode if the brief says so.
+  - Done when: changing the accent color in one place changes it everywhere.
+
+- [ ] **Task 4 — Layout + navigation**
+  - Section order: Hero → Experience → Projects → Skills → How I work (AI-assisted SDLC) → Testimonials → Contact.
+  - Sticky header with section links; simple mobile menu.
+  - Done when: navigation works on phone and desktop.
+
+### Sections
+
+- [ ] **Task 5 — Hero**
+  - Name, title, one-line summary, two buttons: **Download Resume** and **Contact**. GitHub + LinkedIn icons.
+  - Done when: everything a recruiter needs is visible without scrolling.
+
+- [ ] **Task 6 — Experience**
+  - Timeline or clean list. Each job: title, company, label (Contract / Concurrent role), dates, max 3 bullets, tech tags.
+  - Concurrent jobs should look clearly "at the same time", not confusing.
+  - Done when: a reader understands the job history in one skim.
+
+- [ ] **Task 7 — Projects**
+  - **Gintanao** as a featured card at the top (bigger), labeled "In development", screenshots, no link.
+  - Other projects as smaller cards: screenshot, name, 1–2 lines, tags, link (if live).
+  - Optional: a simple case-study page for Gintanao (what it does, stack, what I built, screenshots).
+  - Done when: strongest project stands out first.
+
+- [ ] **Task 8 — Skills**
+  - Grouped: Back-end / Front-end / DevOps & Tools / Platforms. Simple chips or lists, no skill "progress bars" or percentages.
+  - Done when: full stack readable in 5 seconds.
+  - Also style the **How I work** section here: 4 steps (Plan → Build → Deploy → Maintain) as a simple row or numbered list. No diagrams or animations needed.
+
+- [ ] **Task 9 — Testimonials, contact, footer**
+  - Testimonials: clean quote cards.
+  - Contact: email button (and form only if it already works).
+  - One footer, automatic year.
+  - Done when: contact works, one footer.
+
+### Polish + launch
+
+- [ ] **Task 10 — Quality check**
+  - Check at 360px, 768px and desktop widths.
+  - Lighthouse (Chrome DevTools): Performance, Accessibility, SEO **90+**.
+  - Keyboard navigation works; images have alt text; colors have enough contrast.
+  - Page title, meta description and link-preview image (Open Graph) match the new design.
+  - Done when: all scores 90+, no layout breaks.
+
+- [ ] **Task 11 — Launch**
+  - `npm run build` passes. Preview deploy on Vercel, click every link, check on your phone.
+  - Merge `redesign` into main, deploy.
+  - Done when: new design is live, resume link still works.
+
+---
+
+## Log
+
+_One line per finished task. Example: `2026-12-01 — Task 2 — all content moved to portfolio.ts, no visual change.`_
+
+-
