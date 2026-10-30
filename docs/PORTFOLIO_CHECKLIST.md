@@ -72,7 +72,7 @@ Quick reference (from resume v2, Oct 31):
 
 ### Content (needs `resume.md`)
 
-- [ ] **Task 3 — Rewrite headline + About**
+- [x] **Task 3 — Rewrite headline + About**
   - Current headline sells "clean UI" → change to full-stack, Laravel-first.
   - Base the About on the resume **Summary**. Mention both current jobs and the real stack.
   - Add one sentence on how I work: AI-assisted SDLC with Claude (planning, building, deployment, maintenance), with me reviewing and owning the code. Laravel/full-stack stays the main message — AI is *how* I work, not *what* I am.
@@ -105,6 +105,8 @@ Quick reference (from resume v2, Oct 31):
 
 - [ ] **Task 8 — Trim and reorder projects**
   - Order: real estate portal → ICEI → AuctionTale → California Ticket King Dashboard → others.
+  - **ICEI:** project is finished and the client has rebranded. Keep the card and screenshot (it's the 30,000+ learners proof), but **remove the icei.ac.id link** and add a label: "Past project · site since rebranded". Change the description to past tense ("supported", not "supports").
+  - Don't add Cloudswyft's own LMS as a project card — it's company work in development; it's covered in the Cloudswyft job entry.
   - Consider removing or shortening the oldest ones (SBHE AngularJS, Slim PHP portal). Max 5–6 projects.
   - Shorten descriptions to 2–3 sentences. Follow Writing rules.
   - Check every project link still works.
@@ -151,3 +153,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 
 - 2026-10-31 - Task 1 - removed the "© 2024" mobile menu footer, main footer now "© {current year} Erwin Mark Añora".
 - 2026-10-31 - Task 2 - removed Facebook and Instagram icons, kept GitHub and LinkedIn, added an email icon (mailto:erwinmark.anora@gmail.com).
+- 2026-10-31 - Task 3 - new Laravel-first headline and typed roles, About rewritten in 4 sentences (10+ years, Born Malta contract + Cloudswyft, AI-assisted SDLC with Claude).

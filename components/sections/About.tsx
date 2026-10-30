@@ -18,12 +18,10 @@ const About: React.FunctionComponent = () => {
           <h2 className="text-2xl md:text-3xl mb-4 uppercase font-bold min-h-[1.5em]">
             <ReactTyped
               strings={[
-                'Full Stack Developer',
-                'Vue Developer',
-                'React Developer',
+                'Full-Stack Developer',
                 'Laravel Developer',
-                'TailwindCSS Enthusiast',
-                'UI/UX Enthusiast'
+                'Python / Django Developer',
+                'Vue & React Developer'
               ]}
               typeSpeed={50}
               backSpeed={40}
@@ -34,11 +32,11 @@ const About: React.FunctionComponent = () => {
           </h2>
 
           <h6 className="mb-8 uppercase font-bold">
-            Building dashboards and tools with a focus on clean UI and solid architecture.
+            Full-stack developer, Laravel first. 10+ years building web apps from database to deployment.
           </h6>
 
           <p className="text-lg leading-relaxed mb-6">
-            Hi, I’m Erwin Mark, a full stack developer currently working <span className="text-accent">@Cloudswyft</span> where I develop scalable LMS (Learning Management System) applications using Python and React. I have a solid background in Laravel for back-end development, along with experience in Vue.js and other modern front-end frameworks. Known for strong communication and collaboration, I work closely with teams and stakeholders to deliver clean, responsive, and reliable web solutions. I’m always eager to learn, adapt, and stay current with the latest technologies.
+            Hi, I’m Erwin Mark, a full-stack developer with 10+ years of experience, and Laravel is my main stack. I currently build Laravel apps on contract for <span className="text-accent">@Born Malta</span> and work on Open edX learning platforms with Python, Django and React at <span className="text-accent">@Cloudswyft</span>. Before that, I built web apps with Laravel, Vue and React for teams and clients in the US, Singapore and the Philippines. I use an AI-assisted SDLC with Claude to plan, build, deploy and maintain, and I review and own all code that ships.
           </p>
 
           <LinkButton href="https://drive.google.com/file/d/1_zPD4x9E6y9VTcE2GIGpX-1_1Lly9WGn/view">

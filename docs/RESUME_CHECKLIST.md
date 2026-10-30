@@ -62,6 +62,8 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 - Born Malta Azure: not sure → **leave out** unless confirmed.
 - Born Malta AI: ✅ company provides Claude; I use **my own workflow** (not team-wide). Term: **AI-assisted SDLC** — Claude for planning, building, deployment and maintenance.
 - Cloudswyft interns supervised: ✅ **4–5**
+- Cloudswyft's own LMS: ✅ in development, staging only → **no link**. Working name "OrbIT LMS" is **not final → don't name it**; say "Cloudswyft's own learning platform". Stack: **Open edX (Sumac), Python/Django, React micro-frontends (MFEs)**. Role: **sole developer** (1 DevOps teammate).
+- ICEI: ✅ **completely finished**, client has since rebranded. All ICEI bullets → **past tense**. "now supporting 30,000+" → "served 30,000+".
 - Offshorly team: ✅ **4 developers (2 back-end, 2 front-end)**, I was the full-stack lead
 - Contractor clients: ✅ **5** (the 5 named in the resume)
 - Certifications: ✅ **none** → no Certifications section
@@ -94,7 +96,7 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 
 ### Remaining
 
-- [ ] **Task 1 — Create `resume.md` from v2**
+- [x] **Task 1 — Create `resume.md` from v2**
   - Erwin pastes the **v2** resume text into the session.
   - Claude puts it in `resume.md` in the right reading order: Header → Summary → Experience → Projects (empty) → Skills → Education.
   - No content changes. Done when: `resume.md` matches v2.
@@ -126,10 +128,12 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
   1. Led development of AuctionTale, a real-time bidding platform (Vue, Laravel 9), from build to MVP launch.
   2. Led a remote team of 4 developers (2 back-end, 2 front-end) as full-stack lead: planned tasks, reviewed code, and set code-review standards.
 
-  **Cloudswyft (small tweaks only)**
-  - Add bullet: "Supervise 4–5 interns building features for the OrbIT LMS: assign work and review their output."
-  - Merge the "Collaborate with DevOps" bullet into the production-issues bullet.
-  - Cut "to ensure ongoing stability". Same tense: "Maintain", not "Maintaining".
+  **Cloudswyft (rewrite to 3 bullets)** — ICEI is finished; Cloudswyft's own LMS is the current work. Use these exactly:
+  1. Built the front-end of ICEI's Open edX learning platform, which served 30,000+ active learners.
+  2. Sole developer of Cloudswyft's own learning platform (Open edX Sumac, Python/Django, React micro-frontends), currently in development; supervise 4–5 interns building features for it.
+  3. Maintained ICEI's production platform: fixed client-reported issues across the Python/Django and React codebases and resolved Xendit payment and enrollment edge cases, working with DevOps.
+  - **No staging link. Don't use the name "OrbIT LMS".**
+  - This replaces all 4 old Cloudswyft bullets.
 
   **Independent Contractor (small tweaks only)**
   - First bullet: "Built web applications for 5 clients in the US, Singapore and the Philippines (Laravel, Vue, React)."
@@ -175,3 +179,4 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 ## Log
 
 - 2026-10-31 — v2 — title, summary, Born Malta, Cloudswyft, merged timeline, trimmed to 2 pages (done by Erwin directly).
+- 2026-10-31 - Task 1 - created `docs/resume.md` from the v2 PDF in reading order (Header, Summary, Experience, Projects (empty), Skills, Education); no content changes.
