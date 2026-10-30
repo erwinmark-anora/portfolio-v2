@@ -89,7 +89,7 @@ Quick reference (from resume v2, Oct 31):
   - Fix tags so they match the bullets (Python, Django, React, Open edX…).
   - Done when: same title and dates as the resume, no vague lines left.
 
-- [ ] **Task 6 — Match the older jobs to the resume**
+- [x] **Task 6 — Match the older jobs to the resume**
   - Offshorly: copy from `resume.md`.
   - California Ticket King and SBHE are separate jobs on the site but sit under "Independent Full-Stack Contractor (2018–2023)" on the resume. Either group them the same way, or keep them separate but labeled **Freelance/Contract** with titles that don't contradict the resume.
   - Max 3 bullets each, follow Writing rules.
@@ -156,3 +156,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 3 - new Laravel-first headline and typed roles, About rewritten in 4 sentences (10+ years, Born Malta contract + Cloudswyft, AI-assisted SDLC with Claude).
 - 2026-10-31 - Task 4 - added Born Malta (via Webee) as the top job: Full-Stack Developer, "Contract · Concurrent role", Sep 2025 - Present, 3 resume bullets (end-to-end app, 4 team projects, Claude workflow), tags Laravel/Livewire/JavaScript/jQuery/Claude; ExperienceCard now shows the workType label.
 - 2026-10-31 - Task 5 - Cloudswyft entry now "Senior Full-Stack Engineer", Cloudswyft Global Systems, "Concurrent role", Oct 2022 - Present; 3 Facts-confirmed bullets (ICEI front-end, 30,000+ learners, past tense; sole developer of own platform + 4-5 interns; ICEI maintenance + Xendit); tags Open edX/Python/Django/React/Xendit.
+- 2026-10-31 - Task 6 - Offshorly now "Full-Stack Developer" with 2 Facts-confirmed bullets (AuctionTale MVP, team of 4), tags Laravel/Vue; California Ticket King + SBHE merged into one "Independent Full-Stack Contractor", "Freelance / Contract", 2018 - 2023 entry (5 clients, CTK Stripe portal + dashboard, SBHE AngularJS + Laravel APIs).

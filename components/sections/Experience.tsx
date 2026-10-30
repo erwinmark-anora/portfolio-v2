@@ -33,42 +33,26 @@ const Experience: React.FunctionComponent = () => {
       technologies: ['Open edX', 'Python', 'Django', 'React', 'Xendit', 'Claude Code']
     },
     {
-      title: "Full-stack Web Developer",
+      title: "Full-Stack Developer",
       company: "Offshorly",
       duration: "Feb 2022 - Oct 2022",
       description: [
-        'Led the front-end development of Auction Tale, a web-based bidding application built with Vue.js and powered by a Laravel 9 back-end.',
-        'Collaborated with stakeholders to define requirements and deliver a smooth, user-focused bidding experience.',
-        'Oversaw task planning, conducted code reviews, and ensured efficient collaboration between front-end and back-end teams.',
-        'Focused on building responsive, intuitive interfaces and optimizing performance for real-time bidding interactions.'
+        'Led development of AuctionTale, a real-time bidding platform (Vue, Laravel 9), from build to MVP launch.',
+        'Led a remote team of 4 developers (2 back-end, 2 front-end) as full-stack lead: planned tasks, reviewed code, and set code-review standards.'
       ],
-      technologies: ['Laravel', 'VueJS', 'TailwindCSS']
+      technologies: ['Laravel', 'Vue']
     },
     {
-      title: "Web Developer",
-      company: "California Ticket King, PC",
-      workType: "( Freelance: Part-Time → Full-Time )",
-      duration: "May 2018 - Jun 2022",
+      title: "Independent Full-Stack Contractor",
+      company: "Self-employed",
+      workType: "Freelance / Contract",
+      duration: "2018 - 2023",
       description: [
-        'Led development of the company’s payment portal, built with Slim PHP and jQuery, ensuring secure transaction handling and seamless integration with third-party payment gateways.',
-        'Built and maintained a dynamic internal dashboard using Laravel (back-end) and VueJS (front-end), allowing staff and admins to manage customer data, transactions, and system metrics efficiently.',
-        'Focused on improving performance, code maintainability, and UI responsiveness, enhancing overall user experience and operational workflow.',
-        'Collaborated closely with internal teams to gather requirements, troubleshoot issues, and deploy regular feature updates.'
+        'Built web applications for 5 clients in the US, Singapore and the Philippines (Laravel, Vue, React).',
+        'Built California Ticket King\'s (US) Stripe payment portal in Slim PHP and jQuery, plus a Laravel/Vue internal dashboard for customer and transaction management.',
+        'Built the AngularJS front-end of SBHE\'s (Singapore) project-management app and contributed to its Laravel APIs.'
       ],
-      technologies: ['Laravel', 'VueJS', 'Slim', 'JQuery', 'TailwindCSS']
-    },
-    {
-      title: "Front-end Developer",
-      company: "SBHE PTE LTD",
-      workType: "Freelance",
-      duration: "Aug 2018 - Sep 2019",
-      description: [
-        'Developed the front-end of a project management web application using AngularJS, focusing on user-friendly dashboards, task tracking, and real-time collaboration features.',
-        'Contributed to the back-end API built with Laravel, implementing endpoints and handling data models to support the front-end’s dynamic interactions.',
-        'Worked closely with the design and product teams to translate business requirements into responsive and interactive UI components.',
-        'Ensured cross-browser compatibility, optimized performance, and maintained clean, modular code across both front-end and back-end layers.'
-      ],
-      technologies: ['Laravel', 'AngularJS']
+      technologies: ['Laravel', 'Vue', 'React', 'Slim PHP', 'jQuery', 'Stripe', 'AngularJS']
     },
   ], []); 
 
