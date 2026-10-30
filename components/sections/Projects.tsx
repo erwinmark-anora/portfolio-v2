@@ -9,58 +9,70 @@ const Projects: React.FunctionComponent = () => {
       title: "Gintanao",
       image: "/images/projects/gintanao-stack.png",
       status: "In development",
-      featured: true,
       description: "A real estate listing portal for Davao City. Buyers search homes for sale, view full listing details and photos, and contact the listing agent directly.",
       highlights: [
         "Built the Next.js front-end: home page, property search with filters, and listing pages with photo galleries.",
         "Built the Laravel back-end and API, with a Filament admin panel for managing listings.",
         "Added agent contact options on each listing (Messenger, WhatsApp, Viber, call, viewing requests) and a home loan calculator.",
       ],
-      technologies: ["Next.js", "Laravel", "Filament"],
+      technologies: ["Next.js", "Laravel", "Filament", "shadcn/ui", "TailwindCSS"],
     },
     {
       title: "ICEI (Indonesia Cyber Education Institute)",
       image: "/images/projects/ICE ( Indonesia Cyber Education Institute ).png",
-      description: "A comprehensive Learning Management System (LMS) designed to facilitate online education. Built on the robust edX platform, ICEI supports various user roles, including learners, instructors (dosen), partners (mitra), and administrators. The system is designed to provide a seamless educational experience, allowing learners to enroll in courses offered by various partner institutions.",
-      technologies: ["Python", "Javascript", "JQuery"],
-      link: "https://icei.ac.id/"
+      status: "Past project · site since rebranded",
+      description: "ICEI's Open edX learning platform, built at Cloudswyft. It served 30,000+ active learners and supported learners, instructors, partner schools and admins.",
+      highlights: [
+        "Built the front-end of the platform.",
+        "Fixed client-reported issues across the Python/Django and React codebases.",
+        "Resolved Xendit payment and enrollment edge cases, working with DevOps.",
+      ],
+      technologies: ["Open edX", "Python", "Django", "React", "Xendit"],
     },
     {
       title: "AuctionTale",
       image: "/images/projects/AuctionTale.png",
-      description: "An advanced auction platform built with Vue.js and Laravel, utilizing Tailwind CSS for a sleek and responsive design. This application enables sellers to list items for auction, buyers to place competitive bids, and administrators to oversee the entire process by approving, rejecting, and scheduling auctions. Key features include real-time updates, user-friendly interfaces, and robust administrative controls. Auction Tale ensures a seamless and efficient auction experience for all users, enhancing the traditional auction process with modern technology.",
+      description: "An auction platform for vintage collectibles. Sellers list items, buyers bid in real time, and admins approve and schedule auctions.",
+      highlights: [
+        "Led development with Vue and Laravel 9 at Offshorly, from build to MVP launch.",
+        "Led a team of 4 developers (2 back-end, 2 front-end) as full-stack lead.",
+        "Planned tasks, reviewed code, and set code-review standards for the team.",
+      ],
       technologies: ["Laravel", "VueJS", "TailwindCSS"],
       link: "https://auctiontale.com/"
     },
     {
+      title: "California Ticket King Dashboard",
+      image: "/images/projects/Dashboard California Ticket King.png",
+      description: "An internal dashboard for California Ticket King's attorneys and staff, built with Vue and Laravel.",
+      highlights: [
+        "Built case management: create and track client cases, and assign courthouses to attorneys.",
+        "Built user management and payment coupons.",
+        "Integrated Stripe for client payments.",
+      ],
+      technologies: ["Laravel", "VueJS", "Stripe"],
+    },
+    {
       title: "Easy BDI Course",
       image: "/images/projects/Easy BDI Course.png",
-      description: "A modern Learning Management System (LMS) built with Vue.js and Laravel, designed specifically for individuals taking BDI courses. It offers an intuitive interface for accessing and managing course materials, engaging with interactive learning modules, and completing customizable exams. Upon passing exams, learners receive their certificates automatically. EasyBDI ensures a secure, scalable, and user-friendly experience, making it the ideal platform for your BDI certification journey.",
+      description: "A learning platform for people taking BDI courses.",
+      highlights: [
+        "Built and deployed the platform with Vue 2 and Laravel.",
+        "Built interactive learning modules and automated exams.",
+        "Added automatic certificates for learners who pass.",
+      ],
       technologies: ["Laravel", "VueJS"],
     },
     {
       title: "Virtual Assistants Finder",
       image: "/images/projects/Virtual Assistants Finder.png",
-      description: "Developed a new application from scratch for finding virtual assistants using ReactJS. The application features comprehensive dashboards for both employers and job seekers, including functionalities such as real-time chat, time tracking, job postings, and application management. It also offers search filters and profile management to streamline the hiring process. The goal was to revamp their site, enhancing user experience, performance, and overall efficiency.",
+      description: "A platform that matches virtual assistants with employers.",
+      highlights: [
+        "Rebuilt the app from scratch in React.",
+        "Built dashboards for employers and job seekers, with job posts and application management.",
+        "Added real-time chat and time tracking.",
+      ],
       technologies: ["Python", "ReactJS", "MaterialUI"],
-    },
-    {
-      title: "Dashboard California Ticket King",
-      image: "/images/projects/Dashboard California Ticket King.png",
-      description: "A website built on Vue.js and Laravel for company attorneys and staff. The application records and creates cases from clients, allows user creation and updates, manages payment coupons, assigns courthouses for attorneys, and integrates Stripe accounts. It ensures efficient case management and payment processing.",
-      technologies: ["Laravel", "VueJS"],
-    },
-    {
-      title: "SBHE Project Management",
-      image: "/images/projects/SBHE Project Management.png",
-      description: "An application built on Laravel and AngularJS used by company employees and owners to oversee and manage projects and employee work. It records all ongoing construction projects and tracks workers, including their attendance and hours. The application also maintains equipment backlogs and conditions, providing a comprehensive view of company resources and project status.",
-      technologies: ["Laravel", "AngularJS"],
-    },
-    {
-      title: "California Ticket King Payment Portal",
-      image: "/images/projects/California Ticket King Payment Portal.png",
-      description: "A payment portal built on Slim PHP and jQuery. This website collects information and payments via Stripe from clients with traffic tickets who hire attorneys to resolve them. Currently, the application serves clients in California counties only.",
-      technologies: ["SlimPHP", "Javascript", "JQuery"],
     },
   ], []); 
 

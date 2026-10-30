@@ -103,7 +103,7 @@ Quick reference (from resume v2, Oct 31):
   - **No link** until live — gintanao.com is only a coming-soon page. **No GitHub link — the repo stays private** (business).
   - Done when: newest, most modern project shows first.
 
-- [ ] **Task 8 — Trim and reorder projects**
+- [x] **Task 8 — Trim and reorder projects**
   - Order: real estate portal → ICEI → AuctionTale → California Ticket King Dashboard → others.
   - **ICEI:** project is finished and the client has rebranded. Keep the card and screenshot (it's the 30,000+ learners proof), but **remove the icei.ac.id link** and add a label: "Past project · site since rebranded". Change the description to past tense ("supported", not "supports").
   - Don't add Cloudswyft's own LMS as a project card — it's company work in development; it's covered in the Cloudswyft job entry.
@@ -158,3 +158,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 5 - Cloudswyft entry now "Senior Full-Stack Engineer", Cloudswyft Global Systems, "Concurrent role", Oct 2022 - Present; 3 Facts-confirmed bullets (ICEI front-end, 30,000+ learners, past tense; sole developer of own platform + 4-5 interns; ICEI maintenance + Xendit); tags Open edX/Python/Django/React/Xendit.
 - 2026-10-31 - Task 6 - Offshorly now "Full-Stack Developer" with 2 Facts-confirmed bullets (AuctionTale MVP, team of 4), tags Laravel/Vue; California Ticket King + SBHE merged into one "Independent Full-Stack Contractor", "Freelance / Contract", 2018 - 2023 entry (5 clients, CTK Stripe portal + dashboard, SBHE AngularJS + Laravel APIs).
 - 2026-10-31 - Task 7 - added Gintanao as project #1: "In development" label, 2-sentence description, 3 "built" bullets, tags Next.js/Laravel/Filament, stacked 3-page screenshot, no link; ProjectCard now supports status + highlights.
+- 2026-10-31 - Task 8 - projects cut from 8 to 6 (removed SBHE and the CTK Slim PHP payment portal), reordered Gintanao → ICEI → AuctionTale → CTK Dashboard → Easy BDI → VA Finder; ICEI link removed, "Past project · site since rebranded" label, past tense; all descriptions cut to 2-3 sentences; auctiontale.com checked (200, live). All cards now use the Gintanao format: 1-2 sentence description + 3 "built" bullets.

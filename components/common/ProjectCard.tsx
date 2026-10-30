@@ -15,13 +15,13 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) =>
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-8 py-6 items-center ">
       <div className={`${project.featured ? 'lg:w-150' : 'lg:w-130'} flex-shrink-0 mb-6 lg:mb-0`}>
-        <div className={`${project.featured ? 'aspect-[3/2]' : 'aspect-video'} bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700`}>
+        <div className={`aspect-[3/2] bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700`}>
           {project.image ? (
             <Image
               src={project.image}
               alt={`${project.title} screenshot`}
               width={project.featured ? 600 : 440}
-              height={project.featured ? 400 : 260}
+              height={project.featured ? 400 : 293}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               loading="lazy"
               onError={(e) => {
