@@ -30,12 +30,12 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 - **Who it's for:** recruiters and hiring managers. They spend ~10 seconds. They need: name, role, stack, current jobs, best projects, resume, contact.
 - **Positioning:** Full-stack developer, Laravel-first, 10+ years. (Role-level rule: see `RESUME_CHECKLIST.md`.)
-- **Style:** `____` (e.g. clean/minimal, bold, dark tech)
-- **3 portfolios I like (links):** `____`
-- **Accent color:** `____` (one only)
-- **Fonts:** `____` (max 2: one for headings, one for body)
-- **Dark mode:** `____` (yes / no / follow system)
-- **Keep from current site:** `____` (e.g. logo)
+- **Style:** Minimal, with a macOS-like feel (not a copy): rounded corners, soft translucent "glass" panels, subtle shadows, lots of space. Simple, shows the work, personal. One interactive, techy section: **How I work**, shown as a macOS-style window with a segmented control (Plan / Build / Deploy / Maintain) that swaps the step text. Click and keyboard only, no autoplay, still when "reduce motion" is on. This is the only exception to the "small effects only" rule.
+- **3 portfolios I like (links):** None. Most felt too complicated; the goal is simpler than all of them.
+- **Accent color:** Teal `#0FA4AF`
+- **Fonts:** Nunito (headings and body) + JetBrains Mono (small labels, tags, How I work output)
+- **Dark mode:** Dark only. No light mode, no toggle.
+- **Keep from current site:** Nothing (content stays, the look is new).
 
 ---
 
@@ -55,7 +55,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Setup
 
-- [ ] **Task 1 — Fill the design brief**
+- [x] **Task 1 — Fill the design brief**
   - Erwin shares 3 portfolios he likes. Claude describes what they have in common and proposes 2 directions (style, color, fonts) in a few lines each.
   - Erwin picks one. Claude fills the **Design brief** above.
   - No code. Done when: every brief blank is filled.
@@ -126,4 +126,4 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 _One line per finished task. Example: `2026-12-01 — Task 2 — all content moved to portfolio.ts, no visual change.`_
 
--
+- 2026-11-01 - Task 1 - brief filled: minimal macOS-like feel, dark only, Nunito + JetBrains Mono, teal accent, interactive How I work window.
