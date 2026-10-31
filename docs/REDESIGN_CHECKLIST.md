@@ -95,7 +95,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
   - Optional: a simple case-study page for Gintanao (what it does, stack, what I built, screenshots).
   - Done when: strongest project stands out first.
 
-- [ ] **Task 8 — Skills**
+- [x] **Task 8 — Skills**
   - Grouped: Back-end / Front-end / DevOps & Tools / Platforms. Simple chips or lists, no skill "progress bars" or percentages.
   - Done when: full stack readable in 5 seconds.
   - Also style the **How I work** section here: 4 steps (Plan → Build → Deploy → Maintain) as a simple row or numbered list. No diagrams or animations needed.
@@ -133,3 +133,4 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 - 2026-11-01 - Task 5 - new hero: static name, title, summary, Download Resume + Contact buttons, GitHub/LinkedIn icons above the fold; intro in a glass panel (beside on desktop, below on phone); typing animation removed; build passes.
 - 2026-11-01 - Task 6 - experience as a vertical timeline of glass cards (dates, label pill, title, company, bullets, mono tech tags); the two concurrent roles share one timeline point in a framed side-by-side group (stacked on phone); build passes.
 - 2026-11-01 - Task 7 - Gintanao as a big featured glass card first ("In development" pill, stacked screenshots, highlights, tags, no link); other projects in a 1/2/3-column grid of small cards (screenshot, name, 2-line description, tags, link icon when live); no case-study page; build passes.
+- 2026-11-01 - Task 8 - skills as 4 always-visible glass cards (mono group label, chips with small brand icon), tabs/autoplay/slider removed; How I work as a macOS-style window with a Plan/Build/Deploy/Maintain segmented control (click + arrow keys, no autoplay, all steps in HTML); build passes.
