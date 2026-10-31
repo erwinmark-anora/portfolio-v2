@@ -80,7 +80,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Sections
 
-- [ ] **Task 5 — Hero**
+- [x] **Task 5 — Hero**
   - Name, title, one-line summary, two buttons: **Download Resume** and **Contact**. GitHub + LinkedIn icons.
   - Done when: everything a recruiter needs is visible without scrolling.
 
@@ -130,3 +130,4 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 - 2026-11-01 - Task 2 - all content moved to content/portfolio.ts, components read from it; built HTML has identical visible text, no visual change.
 - 2026-11-01 - Task 3 - dark-only tokens in app/globals.css (one --accent #0FA4AF drives all accent shades), Nunito + JetBrains Mono, type scale, spacing, radius, glass utility, reduced-motion rule.
 - 2026-11-01 - Task 4 - sections reordered (Hero, Experience, Projects, Skills, How I work, Testimonials, Contact), new glass sticky header with scrollspy and a simple drop-down mobile menu (Escape closes), build passes.
+- 2026-11-01 - Task 5 - new hero: static name, title, summary, Download Resume + Contact buttons, GitHub/LinkedIn icons above the fold; intro in a glass panel (beside on desktop, below on phone); typing animation removed; build passes.

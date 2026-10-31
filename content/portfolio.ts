@@ -50,6 +50,12 @@ export const about = {
     { text: '. Before that, I built web apps with Laravel, Vue and React for teams and clients in the US, Singapore and the Philippines. I use an AI-assisted SDLC with Claude Code to plan, build, deploy and maintain, and I review and own all code that ships.' },
   ],
   resumeLabel: 'Download Resume',
+  contactLabel: 'Contact',
+  // accessible names for the icon-only links
+  socialLabels: {
+    github: 'GitHub',
+    linkedin: 'LinkedIn',
+  },
 };
 
 export const experience = {
