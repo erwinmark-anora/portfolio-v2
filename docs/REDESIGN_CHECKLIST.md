@@ -68,7 +68,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Foundation
 
-- [ ] **Task 3 — Design tokens**
+- [x] **Task 3 — Design tokens**
   - Set colors, fonts, font sizes, spacing and border radius in one place (Tailwind config / CSS variables), from the brief.
   - Add dark mode if the brief says so.
   - Done when: changing the accent color in one place changes it everywhere.
@@ -128,3 +128,4 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 
 - 2026-11-01 - Task 1 - brief filled: minimal macOS-like feel, dark only, Nunito + JetBrains Mono, teal accent, interactive How I work window.
 - 2026-11-01 - Task 2 - all content moved to content/portfolio.ts, components read from it; built HTML has identical visible text, no visual change.
+- 2026-11-01 - Task 3 - dark-only tokens in app/globals.css (one --accent #0FA4AF drives all accent shades), Nunito + JetBrains Mono, type scale, spacing, radius, glass utility, reduced-motion rule.

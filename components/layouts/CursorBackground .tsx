@@ -17,8 +17,8 @@ export default function CursorBackground() {
       className="pointer-events-none z-0 hidden md:block fixed inset-0 transition-all duration-300 md:z-50"
       style={{
         background: `radial-gradient(300px at ${coords.x}px ${coords.y}px, 
-          rgba(42, 221, 234, 0.08), 
-          rgba(15, 164, 175, 0.05), 
+          color-mix(in oklab, var(--accent) 8%, transparent),
+          color-mix(in oklab, var(--accent) 5%, transparent),
           transparent 80%)`,
       }}
     ></div>
