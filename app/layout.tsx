@@ -1,44 +1,43 @@
 import type { Metadata } from "next";
-import { Outfit, Geist_Mono } from "next/font/google";
+import { Nunito, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import CursorBackground  from "@/components/layouts/CursorBackground ";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import Wallpaper from "@/components/layouts/Wallpaper";
+import BackToTop from "@/components/layouts/BackToTop";
+import { site } from "@/content/portfolio";
 
-const outfit = Outfit({
+const nunito = Nunito({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-outfit',
+  variable: '--font-nunito',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
 });
 
-const siteTitle = 'Erwin Mark Añora | Full-Stack Developer, Laravel First';
-const siteDescription = 'Full-stack developer with 10+ years building web apps from database to deployment. Laravel and Livewire, Vue, React, Next.js and Python/Django.';
+const siteTitle = site.title;
+const siteDescription = site.description;
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://erwinmarkanora.vercel.app'),
+  metadataBase: new URL(site.url),
   title: siteTitle,
   description: siteDescription,
   openGraph: {
     title: siteTitle,
     description: siteDescription,
     url: '/',
-    siteName: 'Erwin Mark Añora',
+    siteName: site.name,
     type: 'website',
   },
+  // The preview image comes from app/opengraph-image.tsx; X falls back to og:image.
+  // The favicon comes from app/favicon.ico.
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: siteTitle,
     description: siteDescription,
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
 }
 
@@ -50,12 +49,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${geistMono.variable} font-sans antialiased bg-primary text-white selection:bg-accent selection:text-primary`}
+        className={`${nunito.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-accent-foreground`}
       >
+        <Wallpaper />
         <CursorBackground />
         <Navbar />
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="mx-auto w-full max-w-content px-gutter">{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

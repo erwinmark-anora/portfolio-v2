@@ -5,6 +5,8 @@ export interface IExperience {
   company: string;
   workType?: string;
   duration: string;
+  // true for roles held at the same time; consecutive concurrent roles are grouped side by side
+  concurrent?: boolean;
   description: string[];
   technologies: string[];
 }
@@ -23,6 +25,8 @@ export interface ISkillGroup {
 export interface IProject {
   title: string;
   image: string;
+  // extra screenshots shown after `image` in the lightbox
+  screenshots?: string[];
   description: string;
   technologies: string[];
   link?: string;

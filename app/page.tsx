@@ -6,6 +6,8 @@ import Projects from "@/components/sections/Projects";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 
+// Section order: Hero → Experience → Projects → Skills → How I work → Testimonials → Contact.
+// scroll-mt keeps headings clear of the sticky header when jumping to a section.
 export default function Home() {
   return (
     <>
@@ -13,27 +15,27 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="experiences" className="scroll-mt-20 mb-60">
+      <section id="experiences" className="scroll-mt-20 py-section">
         <Experience />
       </section>
 
-      <section id="skills" className="scroll-mt-20 mb-60">
-        <Skills />
-      </section>
-
-      <section id="how-i-work" className="scroll-mt-20 mb-60">
-        <HowIWork />
-      </section>
-
-      <section id="projects" className="scroll-mt-20 mb-60">
+      <section id="projects" className="scroll-mt-20 py-section">
         <Projects />
       </section>
 
-      <section id="testimonials" className="scroll-mt-20">
+      <section id="skills" className="scroll-mt-20 py-section">
+        <Skills />
+      </section>
+
+      <section id="how-i-work" className="scroll-mt-20 py-section">
+        <HowIWork />
+      </section>
+
+      <section id="testimonials" className="scroll-mt-20 py-section">
         <Testimonials />
       </section>
 
-      <section id="contact" className="scroll-mt-20">
+      <section id="contact" className="scroll-mt-20 py-section">
         <Contact />
       </section>
     </>

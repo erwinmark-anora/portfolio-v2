@@ -30,12 +30,12 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 - **Who it's for:** recruiters and hiring managers. They spend ~10 seconds. They need: name, role, stack, current jobs, best projects, resume, contact.
 - **Positioning:** Full-stack developer, Laravel-first, 10+ years. (Role-level rule: see `RESUME_CHECKLIST.md`.)
-- **Style:** `____` (e.g. clean/minimal, bold, dark tech)
-- **3 portfolios I like (links):** `____`
-- **Accent color:** `____` (one only)
-- **Fonts:** `____` (max 2: one for headings, one for body)
-- **Dark mode:** `____` (yes / no / follow system)
-- **Keep from current site:** `____` (e.g. logo)
+- **Style:** Minimal, with a macOS-like feel (not a copy): rounded corners, soft translucent "glass" panels, subtle shadows, lots of space. Simple, shows the work, personal. One interactive, techy section: **How I work**, shown as a macOS-style window with a segmented control (Plan / Build / Deploy / Maintain) that swaps the step text. Click and keyboard only, no autoplay, still when "reduce motion" is on. This is the only exception to the "small effects only" rule.
+- **3 portfolios I like (links):** None. Most felt too complicated; the goal is simpler than all of them.
+- **Accent color:** Teal `#0FA4AF`
+- **Fonts:** Nunito (headings and body) + JetBrains Mono (small labels, tags, How I work output)
+- **Dark mode:** Dark only. No light mode, no toggle.
+- **Keep from current site:** Nothing (content stays, the look is new).
 
 ---
 
@@ -55,12 +55,12 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Setup
 
-- [ ] **Task 1 — Fill the design brief**
+- [x] **Task 1 — Fill the design brief**
   - Erwin shares 3 portfolios he likes. Claude describes what they have in common and proposes 2 directions (style, color, fonts) in a few lines each.
   - Erwin picks one. Claude fills the **Design brief** above.
   - No code. Done when: every brief blank is filled.
 
-- [ ] **Task 2 — Move all content into one data file**
+- [x] **Task 2 — Move all content into one data file**
   - Put all site text (About, jobs, projects, skills, links, testimonials) into one file, e.g. `src/content/portfolio.ts`.
   - Components read from this file. **The site must look exactly the same after this task.**
   - Why: the redesign can change every component without losing or retyping content.
@@ -68,39 +68,39 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Foundation
 
-- [ ] **Task 3 — Design tokens**
+- [x] **Task 3 — Design tokens**
   - Set colors, fonts, font sizes, spacing and border radius in one place (Tailwind config / CSS variables), from the brief.
   - Add dark mode if the brief says so.
   - Done when: changing the accent color in one place changes it everywhere.
 
-- [ ] **Task 4 — Layout + navigation**
+- [x] **Task 4 — Layout + navigation**
   - Section order: Hero → Experience → Projects → Skills → How I work (AI-assisted SDLC) → Testimonials → Contact.
   - Sticky header with section links; simple mobile menu.
   - Done when: navigation works on phone and desktop.
 
 ### Sections
 
-- [ ] **Task 5 — Hero**
+- [x] **Task 5 — Hero**
   - Name, title, one-line summary, two buttons: **Download Resume** and **Contact**. GitHub + LinkedIn icons.
   - Done when: everything a recruiter needs is visible without scrolling.
 
-- [ ] **Task 6 — Experience**
+- [x] **Task 6 — Experience**
   - Timeline or clean list. Each job: title, company, label (Contract / Concurrent role), dates, max 3 bullets, tech tags.
   - Concurrent jobs should look clearly "at the same time", not confusing.
   - Done when: a reader understands the job history in one skim.
 
-- [ ] **Task 7 — Projects**
+- [x] **Task 7 — Projects**
   - **Gintanao** as a featured card at the top (bigger), labeled "In development", screenshots, no link.
   - Other projects as smaller cards: screenshot, name, 1–2 lines, tags, link (if live).
   - Optional: a simple case-study page for Gintanao (what it does, stack, what I built, screenshots).
   - Done when: strongest project stands out first.
 
-- [ ] **Task 8 — Skills**
+- [x] **Task 8 — Skills**
   - Grouped: Back-end / Front-end / DevOps & Tools / Platforms. Simple chips or lists, no skill "progress bars" or percentages.
   - Done when: full stack readable in 5 seconds.
   - Also style the **How I work** section here: 4 steps (Plan → Build → Deploy → Maintain) as a simple row or numbered list. No diagrams or animations needed.
 
-- [ ] **Task 9 — Testimonials, contact, footer**
+- [x] **Task 9 — Testimonials, contact, footer**
   - Testimonials: clean quote cards.
   - Contact: email button (and form only if it already works).
   - One footer, automatic year.
@@ -108,7 +108,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Polish + launch
 
-- [ ] **Task 10 — Quality check**
+- [x] **Task 10 — Quality check**
   - Check at 360px, 768px and desktop widths.
   - Lighthouse (Chrome DevTools): Performance, Accessibility, SEO **90+**.
   - Keyboard navigation works; images have alt text; colors have enough contrast.
@@ -126,4 +126,13 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 _One line per finished task. Example: `2026-12-01 — Task 2 — all content moved to portfolio.ts, no visual change.`_
 
--
+- 2026-11-01 - Task 1 - brief filled: minimal macOS-like feel, dark only, Nunito + JetBrains Mono, teal accent, interactive How I work window.
+- 2026-11-01 - Task 2 - all content moved to content/portfolio.ts, components read from it; built HTML has identical visible text, no visual change.
+- 2026-11-01 - Task 3 - dark-only tokens in app/globals.css (one --accent #0FA4AF drives all accent shades), Nunito + JetBrains Mono, type scale, spacing, radius, glass utility, reduced-motion rule.
+- 2026-11-01 - Task 4 - sections reordered (Hero, Experience, Projects, Skills, How I work, Testimonials, Contact), new glass sticky header with scrollspy and a simple drop-down mobile menu (Escape closes), build passes.
+- 2026-11-01 - Task 5 - new hero: static name, title, summary, Download Resume + Contact buttons, GitHub/LinkedIn icons above the fold; intro in a glass panel (beside on desktop, below on phone); typing animation removed; build passes.
+- 2026-11-01 - Task 6 - experience as a vertical timeline of glass cards (dates, label pill, title, company, bullets, mono tech tags); the two concurrent roles share one timeline point in a framed side-by-side group (stacked on phone); build passes.
+- 2026-11-01 - Task 7 - Gintanao as a big featured glass card first ("In development" pill, stacked screenshots, highlights, tags, no link); other projects in a 1/2/3-column grid of small cards (screenshot, name, 2-line description, tags, link icon when live); no case-study page; build passes.
+- 2026-11-01 - Task 8 - skills as 4 always-visible glass cards (mono group label, chips with small brand icon), tabs/autoplay/slider removed; How I work as a macOS-style window with a Plan/Build/Deploy/Maintain segmented control (click + arrow keys, no autoplay, all steps in HTML); build passes.
+- 2026-11-01 - Task 9 - testimonials as glass quote cards (quote, then small photo + name; stars removed), contact as one centered glass panel with the mailto "Say Hello" button (no form, none existed), single restyled footer with automatic year; build passes.
+- 2026-11-01 - Task 10 - Lighthouse (prod build) mobile 92/100/100/100, desktop 100/100/100/100 (Perf/A11y/Best/SEO); no overflow or fold issues at 360/768/1440, keyboard order and alt text OK; added build-time OG image from content (large preview card), removed 2 broken icon links, header logo alt is now the site name.

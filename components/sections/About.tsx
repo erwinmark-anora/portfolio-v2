@@ -1,76 +1,90 @@
-'use client'
-
 import * as React from 'react';
 import LinkButton from '../ui/LinkButton';
-import { ReactTyped } from 'react-typed';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import RotatingText from '../common/RotatingText';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { about, links } from '@/content/portfolio';
 
+const socialLinks = [
+  { href: links.github, label: about.socialLabels.github, icon: FaGithub },
+  { href: links.linkedin, label: about.socialLabels.linkedin, icon: FaLinkedin },
+];
+
+// Hero: big centered name, rolling roles, summary, Download Resume, Contact and social links, all above the fold
+// on phone and desktop. The longer intro follows below it.
 const About: React.FunctionComponent = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center  text-white">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 px-4">
+    <div className="pb-section">
+      <div className="flex flex-col items-center justify-center py-16 text-center sm:py-24 lg:min-h-[calc(100svh-4rem)]">
+        <h1 className="text-hero font-extrabold tracking-tight text-balance">
+          {about.name}
+        </h1>
 
-        <div className="text-center lg:text-left max-w-3xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase">
-            Erwin Mark Añora
-          </h1>
+        <RotatingText
+          items={about.roles}
+          className="mt-4 block text-[clamp(1.375rem,1rem+1.6vw,2.375rem)] font-semibold text-accent"
+        />
 
-          <h2 className="text-2xl md:text-3xl mb-4 uppercase font-bold min-h-[1.5em]">
-            <ReactTyped
-              strings={[
-                'Full-Stack Developer',
-                'Laravel Developer',
-                'Python / Django Developer',
-                'Vue & React Developer'
-              ]}
-              typeSpeed={50}
-              backSpeed={40}
-              loop
-              cursorChar="|"
-              className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent"
-            />
-          </h2>
+        <p className="mt-5 max-w-xl text-lead text-muted-foreground text-balance">
+          {about.summary}
+        </p>
 
-          <h6 className="mb-8 uppercase font-bold">
-            Full-stack developer, Laravel first. 10+ years building web apps from database to deployment.
-          </h6>
-
-          <p className="text-lg leading-relaxed mb-6">
-            Hi, I’m Erwin Mark, a full-stack developer with 10+ years of experience, and Laravel is my main stack. I currently build Laravel apps on contract for <span className="text-accent">@Born Malta</span> and work on Open edX learning platforms with Python, Django and React at <span className="text-accent">@Cloudswyft</span>. Before that, I built web apps with Laravel, Vue and React for teams and clients in the US, Singapore and the Philippines. I use an AI-assisted SDLC with Claude Code to plan, build, deploy and maintain, and I review and own all code that ships.
-          </p>
-
-          <LinkButton href="https://drive.google.com/file/d/1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL/view">
-            Download Resume
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <LinkButton href={links.resume} variant="primary">
+            {about.resumeLabel}
+          </LinkButton>
+          <LinkButton href="#contact" target="_self">
+            {about.contactLabel}
           </LinkButton>
         </div>
 
-        <div className="flex flex-col items-center lg:items-start gap-6">
-          <div className="flex lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 mt-4 text-white text-2xl">
-            <a 
-              href="https://github.com/solomon0918" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-gray-300 hover:-translate-y-1"
-            >
-              <FaGithub />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/erwin-mark-anora/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-blue-400 hover:-translate-y-1"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="mailto:erwinmark.anora@gmail.com"
-              className="transition-all duration-300 ease-in-out transform hover:scale-125 hover:text-gray-300 hover:-translate-y-1"
-            >
-              <FaEnvelope />
-            </a>
+        <ul className="mt-6 flex items-center gap-1">
+          {socialLinks.map(({ href, label, icon: Icon }) => (
+            <li key={href}>
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="flex h-11 w-11 items-center justify-center rounded-full text-2xl text-muted-foreground transition-colors duration-200 hover:bg-surface-strong hover:text-foreground"
+              >
+                <Icon aria-hidden="true" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* The intro as a macOS terminal window. The prompts are decoration; the paragraph is real text. */}
+      <section aria-labelledby="about-heading" className="mx-auto max-w-3xl">
+        <h2 id="about-heading" className="sr-only">{about.heading}</h2>
+
+        <div className="glass overflow-hidden bg-background-raised/70 shadow-2xl">
+          <div aria-hidden="true" className="relative flex h-10 items-center gap-2 border-b border-border bg-surface px-4">
+            <span className="h-3 w-3 rounded-full bg-[#FF5F57]"></span>
+            <span className="h-3 w-3 rounded-full bg-[#FEBC2E]"></span>
+            <span className="h-3 w-3 rounded-full bg-[#28C840]"></span>
+            <span className="absolute inset-x-0 text-center font-mono text-label text-muted-foreground">erwin@portfolio: ~</span>
+          </div>
+
+          <div className="p-card font-mono text-small leading-relaxed sm:p-8 sm:text-body sm:leading-relaxed">
+            <p aria-hidden="true" className="text-muted-foreground">
+              <span className="text-accent">~</span> % cat about.txt
+            </p>
+
+            <p className="mt-3 text-foreground/85">
+              {about.intro.map((segment, idx) => (
+                segment.highlight
+                  ? <span key={idx} className="text-accent">{segment.text}</span>
+                  : <React.Fragment key={idx}>{segment.text}</React.Fragment>
+              ))}
+            </p>
+
+            <p aria-hidden="true" className="mt-4 text-muted-foreground">
+              <span className="text-accent">~</span> % <span className="inline-block h-[1.1em] w-[0.6em] translate-y-[0.2em] animate-blink bg-foreground/70"></span>
+            </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
