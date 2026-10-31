@@ -1,21 +1,9 @@
 import TestimonialCard from '@/components/common/TestimonialCard';
 import Reveal from '@/components/common/Reveal';
 import Link from 'next/link';
+import { testimonials } from '@/content/portfolio';
 
 const Testimonials: React.FunctionComponent = () => {
-  const testimonials = [
-    {
-      image: "/images/testimonials/scott-hullinger.png",
-      name: "Scott Hullinger",
-      description: "Like a keystone, Erwin’s contributions to California Ticket King are integral to its success as a leader in online-attorney-ticket-resolution. He has built, tested and implemented PHP using Slim and Laravel libraries. He is timely, consistent and persistent, qualities seen only in full stack engineers."
-    },
-    {
-      image: "/images/testimonials/gemini-bataican.jpg", 
-      name: "Gemini Bataican",
-      description: "We hired Erwin to collaborate with us for a web app payment system. He is outstanding to work with, smart and attentive. He gave input on how to make the app even better. We are genuinely happy with the result. We will always consider him in our other coming projects. I would highly recommend his services to anyone."
-    }
-  ];
-
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-7xl mx-auto">
@@ -27,12 +15,12 @@ const Testimonials: React.FunctionComponent = () => {
           >
             #
           </Link>
-          Testimonials
+          {testimonials.heading}
         </h2>
         </Reveal>
         
         <div className='flex flex-col lg:flex-row gap-6'>
-          {testimonials.map((item, idx) => (
+          {testimonials.items.map((item, idx) => (
             <Reveal key={idx} delay={idx * 150}>
               <TestimonialCard testimonial={item} />
             </Reveal>

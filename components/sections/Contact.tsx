@@ -4,6 +4,7 @@ import * as React from 'react';
 import Reveal from '@/components/common/Reveal';
 import LinkButton from '../ui/LinkButton';
 import Link from 'next/link';
+import { contact, links } from '@/content/portfolio';
 
 const Contact: React.FunctionComponent = () => {
   return (
@@ -17,18 +18,18 @@ const Contact: React.FunctionComponent = () => {
           >
             #
           </Link>
-          Let&apos;s Connect
+          {contact.heading}
         </h2>
         </Reveal>
         
         <Reveal>
         <div className="flex flex-col lg:flex-row lg:space-x-8 mt-14">
           <div className="w-10/12 flex-shrink-0 mb-2 font-thin lg:mb-0">
-            Whether you have a question, a project idea, or just want to say hi, feel free to drop me a message. I aim to respond within 24–48 hours.
+            {contact.text}
           </div>
 
           <div className="flex-1">
-            <LinkButton href="mailto:erwinmark.anora@gmail.com" >Say Hello</LinkButton>
+            <LinkButton href={links.email} >{contact.buttonLabel}</LinkButton>
           </div>
         </div>
         </Reveal>

@@ -4,6 +4,7 @@ import "./globals.css";
 import CursorBackground  from "@/components/layouts/CursorBackground ";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import { site } from "@/content/portfolio";
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -16,18 +17,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteTitle = 'Erwin Mark Añora | Full-Stack Developer, Laravel First';
-const siteDescription = 'Full-stack developer with 10+ years building web apps from database to deployment. Laravel and Livewire, Vue, React, Next.js and Python/Django.';
+const siteTitle = site.title;
+const siteDescription = site.description;
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://erwinmarkanora.vercel.app'),
+  metadataBase: new URL(site.url),
   title: siteTitle,
   description: siteDescription,
   openGraph: {
     title: siteTitle,
     description: siteDescription,
     url: '/',
-    siteName: 'Erwin Mark Añora',
+    siteName: site.name,
     type: 'website',
   },
   twitter: {

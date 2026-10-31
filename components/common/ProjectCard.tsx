@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Badge from '@/components/ui/Badge';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import LinkButton from '../ui/LinkButton';
+import { projects } from '@/content/portfolio';
 
 interface IProjectCardProps {
   project: IProject;
@@ -32,7 +33,7 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) =>
             <div className="w-full h-full flex items-center justify-center text-gray-400">
               <div className="text-center">
                 <div className="text-4xl mb-2">🖼️</div>
-                <p className="text-sm">Project Image</p>
+                <p className="text-sm">{projects.imagePlaceholder}</p>
               </div>
             </div>
           )}

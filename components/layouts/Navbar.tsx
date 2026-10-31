@@ -1,21 +1,13 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { INavItem } from '@/lib/types';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { navigationItems } from '@/content/portfolio';
 
 const Navbar: React.FunctionComponent = () => {
-  const navigationItems: INavItem[] = useMemo(() => [
-    { href: '#about', label: 'About' },
-    { href: '#experiences', label: 'Experiences' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#contact', label: 'Contact' },
-  ], []);
-
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);

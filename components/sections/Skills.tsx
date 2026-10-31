@@ -2,72 +2,16 @@
 
 import { ISkillGroup } from '@/lib/types';
 import { useInView } from '@/lib/useInView';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Reveal from '@/components/common/Reveal';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import { FaGraduationCap } from 'react-icons/fa';
-import {
-  SiLaravel, SiLivewire, SiFilament, SiPhp, SiPython, SiDjango, SiPostgresql, SiMysql,
-  SiVuedotjs, SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiTailwindcss, SiHtml5, SiCss3,
-  SiGithubactions, SiDocker, SiGit, SiGithub, SiGitlab, SiBitbucket,
-  SiStripe, SiXendit, SiClaude, SiPostman, SiFigma,
-} from 'react-icons/si';
+import { skills } from '@/content/portfolio';
 
 const AUTOPLAY_DELAY = 4000;
 
 const Skills: React.FunctionComponent = () => {
-  // color = official brand color; white for black logos (Next.js, GitHub), as on their dark-mode logos
-  const skillGroups: ISkillGroup[] = useMemo(() => [
-    {
-      group: "Back-end",
-      skills: [
-        { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
-        { name: 'Livewire', icon: SiLivewire, color: '#FB70A9' },
-        { name: 'Filament', icon: SiFilament, color: '#FDAE4B' },
-        { name: 'PHP', icon: SiPhp, color: '#777BB4' },
-        { name: 'Python', icon: SiPython, color: '#FFD43B' },
-        { name: 'Django', icon: SiDjango, color: '#44B78B' },
-        { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
-        { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
-      ]
-    },
-    {
-      group: "Front-end",
-      skills: [
-        { name: 'Vue', icon: SiVuedotjs, color: '#4FC08D' },
-        { name: 'React', icon: SiReact, color: '#61DAFB' },
-        { name: 'Next.js', icon: SiNextdotjs, color: '#FFFFFF' },
-        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-        { name: 'HTML', icon: SiHtml5, color: '#E34F26' },
-        { name: 'CSS', icon: SiCss3, color: '#1572B6' },
-      ]
-    },
-    {
-      group: "DevOps",
-      skills: [
-        { name: 'GitHub Actions', icon: SiGithubactions, color: '#2088FF' },
-        { name: 'Docker', icon: SiDocker, color: '#2496ED' },
-        { name: 'Git', icon: SiGit, color: '#F05032' },
-        { name: 'GitHub', icon: SiGithub, color: '#FFFFFF' },
-        { name: 'GitLab', icon: SiGitlab, color: '#FC6D26' },
-        { name: 'Bitbucket', icon: SiBitbucket, color: '#2684FF' },
-      ]
-    },
-    {
-      group: "Platforms",
-      skills: [
-        { name: 'Open edX', icon: FaGraduationCap, color: '#FFFFFF' },
-        { name: 'Stripe', icon: SiStripe, color: '#635BFF' },
-        { name: 'Xendit', icon: SiXendit, color: '#4573FF' },
-        { name: 'AI-assisted SDLC (Claude Code)', icon: SiClaude, color: '#D97757' },
-        { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
-        { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
-      ]
-    },
-  ], []);
+  const skillGroups = skills.groups;
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<number>(0);
@@ -114,7 +58,7 @@ const Skills: React.FunctionComponent = () => {
           >
             #
           </Link>
-          Skills
+          {skills.heading}
         </h2>
         </Reveal>
 

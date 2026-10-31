@@ -60,7 +60,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
   - Erwin picks one. Claude fills the **Design brief** above.
   - No code. Done when: every brief blank is filled.
 
-- [ ] **Task 2 — Move all content into one data file**
+- [x] **Task 2 — Move all content into one data file**
   - Put all site text (About, jobs, projects, skills, links, testimonials) into one file, e.g. `src/content/portfolio.ts`.
   - Components read from this file. **The site must look exactly the same after this task.**
   - Why: the redesign can change every component without losing or retyping content.
@@ -127,3 +127,4 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 _One line per finished task. Example: `2026-12-01 — Task 2 — all content moved to portfolio.ts, no visual change.`_
 
 - 2026-11-01 - Task 1 - brief filled: minimal macOS-like feel, dark only, Nunito + JetBrains Mono, teal accent, interactive How I work window.
+- 2026-11-01 - Task 2 - all content moved to content/portfolio.ts, components read from it; built HTML has identical visible text, no visual change.

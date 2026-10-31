@@ -3,25 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Reveal from '@/components/common/Reveal';
-
-const steps = [
-  {
-    name: 'Plan',
-    text: 'Claude helps me break a feature into small tickets, read the codebase and write a plan. I decide the scope and approve the plan.',
-  },
-  {
-    name: 'Build',
-    text: 'I use Claude as a tool to draft code and unit tests. I read every diff and test the feature by hand against a checklist.',
-  },
-  {
-    name: 'Deploy',
-    text: 'Every change goes through a pull request and a CI/CD pipeline. Claude helps write a clear PR description, and I check what goes out.',
-  },
-  {
-    name: 'Maintain',
-    text: 'Claude helps turn bug reports and error alerts into tickets and trace the cause. I confirm the fix before it ships.',
-  },
-];
+import { howIWork } from '@/content/portfolio';
 
 const HowIWork: React.FunctionComponent = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -40,12 +22,12 @@ const HowIWork: React.FunctionComponent = () => {
           >
             #
           </Link>
-          How I work
+          {howIWork.heading}
         </h2>
         </Reveal>
 
         <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {steps.map((step, index) => (
+          {howIWork.steps.map((step, index) => (
             <li key={step.name}>
               <Reveal delay={index * 100} className="h-full">
                 <div className="h-full p-5 rounded-xl border border-white/10 bg-white/5">
@@ -60,7 +42,7 @@ const HowIWork: React.FunctionComponent = () => {
         </ol>
 
         <Reveal delay={400}>
-        <p className="mt-8 text-lg font-medium">I review and own all code that ships.</p>
+        <p className="mt-8 text-lg font-medium">{howIWork.closing}</p>
         </Reveal>
       </div>
     </div>
