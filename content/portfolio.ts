@@ -11,7 +11,7 @@ import {
 export const site = {
   url: 'https://erwinmarkanora.vercel.app',
   name: 'Erwin Mark Añora',
-  title: 'Erwin Mark Añora | Full-Stack Developer, Laravel First',
+  title: 'Erwin Mark Añora | Full-Stack Developer',
   description: 'Full-stack developer with 10+ years building web apps from database to deployment. Laravel and Livewire, Vue, React, Next.js and Python/Django.',
 };
 
@@ -40,7 +40,8 @@ export const about = {
     'Python / Django Developer',
     'Vue & React Developer',
   ],
-  summary: 'Full-stack developer, Laravel first. 10+ years building web apps from database to deployment.',
+  summary: 'Full-stack developer with 10+ years building web apps from database to deployment.',
+  heading: 'About',
   // highlight: true renders the segment in the accent color
   intro: [
     { text: 'Hi, I’m Erwin Mark, a full-stack developer with 10+ years of experience, and Laravel is my main stack. I currently build Laravel apps on contract for ' },
@@ -173,19 +174,19 @@ export const howIWork = {
   steps: [
     {
       name: 'Plan',
-      text: 'Claude helps me break a feature into small tickets, read the codebase and write a plan. I decide the scope and approve the plan.',
+      text: 'An AI assistant helps me break a feature into small tickets, read the codebase and write a plan. I decide the scope and approve the plan.',
     },
     {
       name: 'Build',
-      text: 'I use Claude as a tool to draft code and unit tests. I read every diff and test the feature by hand against a checklist.',
+      text: 'I use AI as a tool to draft code and unit tests. I read every diff and test the feature by hand against a checklist.',
     },
     {
       name: 'Deploy',
-      text: 'Every change goes through a pull request and a CI/CD pipeline. Claude helps write a clear PR description, and I check what goes out.',
+      text: 'Every change goes through a pull request and a CI/CD pipeline. AI helps write a clear PR description, and I check what goes out.',
     },
     {
       name: 'Maintain',
-      text: 'Claude helps turn bug reports and error alerts into tickets and trace the cause. I confirm the fix before it ships.',
+      text: 'AI helps turn bug reports and error alerts into tickets and trace the cause. I confirm the fix before it ships.',
     },
   ],
   closing: 'I review and own all code that ships.',

@@ -4,6 +4,8 @@ import "./globals.css";
 import CursorBackground  from "@/components/layouts/CursorBackground ";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import Wallpaper from "@/components/layouts/Wallpaper";
+import BackToTop from "@/components/layouts/BackToTop";
 import { site } from "@/content/portfolio";
 
 const nunito = Nunito({
@@ -52,10 +54,12 @@ export default function RootLayout({
       <body
         className={`${nunito.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-accent-foreground`}
       >
+        <Wallpaper />
         <CursorBackground />
         <Navbar />
         <main className="mx-auto w-full max-w-content px-gutter">{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

@@ -10,6 +10,7 @@
 @theme inline {
   /* Colors */
   --color-background: var(--background);
+  --color-background-raised: var(--background-raised);
   --color-foreground: var(--foreground);
   --color-muted-foreground: var(--muted-foreground);
   --color-surface: var(--surface);
@@ -55,6 +56,8 @@
   --text-heading--line-height: 1.2;
   --text-display: clamp(2.25rem, 1.6rem + 3vw, 3.75rem);
   --text-display--line-height: 1.1;
+  --text-hero: clamp(2.75rem, 1.25rem + 6.5vw, 6.25rem);
+  --text-hero--line-height: 1;
 
   /* Spacing (Tailwind's 0.25rem step stays; these are the layout rhythm) */
   --spacing-gutter: 1rem;
@@ -73,6 +76,12 @@
   --shadow-glass: 0 1px 0 0 rgb(255 255 255 / 0.06) inset, 0 8px 32px -8px rgb(0 0 0 / 0.5);
   --shadow-accent: 0 8px 24px -8px var(--accent-glow);
   --blur-glass: 20px;
+
+  /* Terminal cursor in the About window (stops after one blink when "reduce motion" is on) */
+  --animate-blink: blink 1.1s steps(1) infinite;
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
 }
 
 :root {

@@ -2,7 +2,8 @@ import { ISkillGroup } from '@/lib/types';
 import Reveal from '@/components/common/Reveal';
 import { skills } from '@/content/portfolio';
 
-// Every group is visible at once so the full stack reads in one skim: no tabs, no autoplay, no progress bars.
+// Plain rows, one per group, like the skills block of a resume, so the full stack reads in one skim.
+// No tabs, no autoplay, no progress bars.
 const Skills: React.FunctionComponent = () => {
   return (
     <div>
@@ -10,35 +11,29 @@ const Skills: React.FunctionComponent = () => {
         <h2 className="mb-10 text-heading font-bold tracking-tight">{skills.heading}</h2>
       </Reveal>
 
-      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {skills.groups.map((item: ISkillGroup, index) => (
-          <li key={item.group}>
-            <Reveal delay={index * 100} className="h-full">
-              <section aria-labelledby={`skills-group-${index}`} className="glass h-full p-card">
-                <h3 id={`skills-group-${index}`} className="font-mono text-label uppercase text-accent">
-                  {item.group}
-                </h3>
-
-                <ul className="mt-4 flex flex-wrap gap-2">
+      <Reveal>
+        <dl className="divide-y divide-border border-y border-border">
+          {skills.groups.map((item: ISkillGroup) => (
+            <div key={item.group} className="grid gap-2 py-6 sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8">
+              <dt className="text-body font-semibold text-muted-foreground">{item.group}</dt>
+              <dd>
+                <ul className="flex flex-wrap gap-x-6 gap-y-1.5 text-lead text-foreground">
                   {item.skills.map((skill) => {
                     const Icon = skill.icon;
 
                     return (
-                      <li
-                        key={skill.name}
-                        className="inline-flex items-center gap-2 rounded-md border border-border bg-surface px-2.5 py-1.5 text-small"
-                      >
+                      <li key={skill.name} className="inline-flex items-center gap-2">
                         <Icon aria-hidden="true" className="h-4 w-4 shrink-0" style={{ color: skill.color }} />
                         {skill.name}
                       </li>
                     );
                   })}
                 </ul>
-              </section>
-            </Reveal>
-          </li>
-        ))}
-      </ul>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Reveal>
     </div>
   );
 };
