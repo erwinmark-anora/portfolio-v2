@@ -1,34 +1,33 @@
-import ProjectCard from '@/components/common/ProjectCard';
+import ProjectCard, { FeaturedProjectCard } from '@/components/common/ProjectCard';
 import Reveal from '@/components/common/Reveal';
-import Link from 'next/link';
 import { projects } from '@/content/portfolio';
 
+// The featured project (strongest) comes first and bigger; the rest sit in a grid below it.
 const Projects: React.FunctionComponent = () => {
+  const featured = projects.items.filter((item) => item.featured);
+  const others = projects.items.filter((item) => !item.featured);
+
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-5xl mx-auto">
-        <Reveal>
-        <h2 className="text-5xl font-medium mb-12">
-          <Link 
-            href="#projects"
-            className={`text-primary-light text-7xl font-bold mr-1 hover:text-accent transition-colors duration-300 cursor-pointer`}
-          >
-            #
-          </Link>
-          {projects.heading}
-        </h2>
+    <div>
+      <Reveal>
+        <h2 className="mb-10 text-heading font-bold tracking-tight">{projects.heading}</h2>
+      </Reveal>
+
+      {featured.map((item, idx) => (
+        <Reveal key={idx} className="mb-8">
+          <FeaturedProjectCard project={item} />
         </Reveal>
-        
-        <ul>
-          {projects.items.map((item, idx) => (
-            <li key={idx}>
-              <Reveal>
-                <ProjectCard project={item} />
-              </Reveal>
-            </li>
-          ))}
-        </ul>
-      </div>
+      ))}
+
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {others.map((item, idx) => (
+          <li key={idx}>
+            <Reveal className="h-full">
+              <ProjectCard project={item} />
+            </Reveal>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

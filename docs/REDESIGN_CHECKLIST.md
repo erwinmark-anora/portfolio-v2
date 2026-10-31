@@ -84,12 +84,12 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
   - Name, title, one-line summary, two buttons: **Download Resume** and **Contact**. GitHub + LinkedIn icons.
   - Done when: everything a recruiter needs is visible without scrolling.
 
-- [ ] **Task 6 — Experience**
+- [x] **Task 6 — Experience**
   - Timeline or clean list. Each job: title, company, label (Contract / Concurrent role), dates, max 3 bullets, tech tags.
   - Concurrent jobs should look clearly "at the same time", not confusing.
   - Done when: a reader understands the job history in one skim.
 
-- [ ] **Task 7 — Projects**
+- [x] **Task 7 — Projects**
   - **Gintanao** as a featured card at the top (bigger), labeled "In development", screenshots, no link.
   - Other projects as smaller cards: screenshot, name, 1–2 lines, tags, link (if live).
   - Optional: a simple case-study page for Gintanao (what it does, stack, what I built, screenshots).
@@ -131,3 +131,5 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 - 2026-11-01 - Task 3 - dark-only tokens in app/globals.css (one --accent #0FA4AF drives all accent shades), Nunito + JetBrains Mono, type scale, spacing, radius, glass utility, reduced-motion rule.
 - 2026-11-01 - Task 4 - sections reordered (Hero, Experience, Projects, Skills, How I work, Testimonials, Contact), new glass sticky header with scrollspy and a simple drop-down mobile menu (Escape closes), build passes.
 - 2026-11-01 - Task 5 - new hero: static name, title, summary, Download Resume + Contact buttons, GitHub/LinkedIn icons above the fold; intro in a glass panel (beside on desktop, below on phone); typing animation removed; build passes.
+- 2026-11-01 - Task 6 - experience as a vertical timeline of glass cards (dates, label pill, title, company, bullets, mono tech tags); the two concurrent roles share one timeline point in a framed side-by-side group (stacked on phone); build passes.
+- 2026-11-01 - Task 7 - Gintanao as a big featured glass card first ("In development" pill, stacked screenshots, highlights, tags, no link); other projects in a 1/2/3-column grid of small cards (screenshot, name, 2-line description, tags, link icon when live); no case-study page; build passes.

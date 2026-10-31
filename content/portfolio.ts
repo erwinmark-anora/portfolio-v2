@@ -67,6 +67,7 @@ export const experience = {
       company: "Born Malta (via Webee)",
       workType: "Contract · Concurrent role",
       duration: "Sep 2025 - Present",
+      concurrent: true,
       description: [
         'Own end-to-end development of a social-services / benefits web application using Laravel and JavaScript/jQuery, from feature design through deployment.',
         'Work across four concurrent team projects, contributing to and unblocking multiple Laravel codebases beyond primary ownership, including an internal license-management system built with Laravel and Livewire.',
@@ -79,6 +80,7 @@ export const experience = {
       company: "Cloudswyft Global Systems",
       workType: "Concurrent role",
       duration: "Oct 2022 - Present",
+      concurrent: true,
       description: [
         'Built the front-end of ICEI\'s Open edX learning platform, which served 30,000+ active learners.',
         'Lead development of Cloudswyft\'s own learning platform (Open edX Sumac, Python/Django, React micro-frontends), not yet launched, using an AI-assisted SDLC with Claude Code; supervise 4–5 interns building features for it.',
@@ -194,8 +196,14 @@ export const projects = {
   items: [
     {
       title: "Gintanao",
-      image: "/images/projects/gintanao-stack.png",
+      image: "/images/projects/gintanao/stack.png",
+      screenshots: [
+        "/images/projects/gintanao/home.png",
+        "/images/projects/gintanao/properties.png",
+        "/images/projects/gintanao/listing.png",
+      ],
       status: "In development",
+      featured: true,
       description: "A real estate listing portal for Davao City. Buyers search homes for sale, view full listing details and photos, and contact the listing agent directly.",
       highlights: [
         "Built the Next.js front-end: home page, property search with filters, and listing pages with photo galleries.",
@@ -206,7 +214,12 @@ export const projects = {
     },
     {
       title: "ICEI (Indonesia Cyber Education Institute)",
-      image: "/images/projects/ICE ( Indonesia Cyber Education Institute ).png",
+      image: "/images/projects/icei/stack.png",
+      screenshots: [
+        "/images/projects/icei/home.png",
+        "/images/projects/icei/course-details.png",
+        "/images/projects/icei/admin-dashboard.png",
+      ],
       status: "Past project · site since rebranded",
       description: "ICEI's Open edX learning platform, built at Cloudswyft. It served 30,000+ active learners and supported learners, instructors, partner schools and admins.",
       highlights: [
@@ -218,7 +231,12 @@ export const projects = {
     },
     {
       title: "AuctionTale",
-      image: "/images/projects/AuctionTale.png",
+      image: "/images/projects/auctiontale/stack.png",
+      screenshots: [
+        "/images/projects/auctiontale/home.png",
+        "/images/projects/auctiontale/auction-search.png",
+        "/images/projects/auctiontale/admin.png",
+      ],
       description: "An auction platform for vintage collectibles. Sellers list items, buyers bid in real time, and admins approve and schedule auctions.",
       highlights: [
         "Led development with Vue and Laravel 9 at Offshorly, from build to MVP launch.",
@@ -230,7 +248,12 @@ export const projects = {
     },
     {
       title: "California Ticket King Dashboard",
-      image: "/images/projects/Dashboard California Ticket King.png",
+      image: "/images/projects/dashboard-california-ticket-king/stack.png",
+      screenshots: [
+        "/images/projects/dashboard-california-ticket-king/dashboard.png",
+        "/images/projects/dashboard-california-ticket-king/cases.png",
+        "/images/projects/dashboard-california-ticket-king/courthouses.png",
+      ],
       description: "An internal dashboard for California Ticket King's attorneys and staff, built with Vue and Laravel.",
       highlights: [
         "Built case management: create and track client cases, and assign courthouses to attorneys.",
@@ -241,7 +264,12 @@ export const projects = {
     },
     {
       title: "Easy BDI Course",
-      image: "/images/projects/Easy BDI Course.png",
+      image: "/images/projects/easy-bdi/stack.png",
+      screenshots: [
+        "/images/projects/easy-bdi/home.png",
+        "/images/projects/easy-bdi/course-quiz.png",
+        "/images/projects/easy-bdi/exam.png",
+      ],
       description: "A learning platform for people taking BDI courses.",
       highlights: [
         "Built and deployed the platform with Vue 2 and Laravel.",
@@ -252,7 +280,12 @@ export const projects = {
     },
     {
       title: "Virtual Assistants Finder",
-      image: "/images/projects/Virtual Assistants Finder.png",
+      image: "/images/projects/virtualstafffinder/stack.png",
+      screenshots: [
+        "/images/projects/virtualstafffinder/home.png",
+        "/images/projects/virtualstafffinder/knowledge-base.png",
+        "/images/projects/virtualstafffinder/enterprise.png",
+      ],
       description: "A platform that matches virtual assistants with employers.",
       highlights: [
         "Rebuilt the app from scratch in React.",
@@ -263,6 +296,12 @@ export const projects = {
     },
   ] as IProject[],
   imagePlaceholder: 'Project Image',
+  lightbox: {
+    open: 'View screenshots of',
+    close: 'Close',
+    previous: 'Previous screenshot',
+    next: 'Next screenshot',
+  },
 };
 
 export const testimonials = {
