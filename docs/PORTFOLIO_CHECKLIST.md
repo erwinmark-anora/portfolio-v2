@@ -114,7 +114,7 @@ Quick reference (from resume v2, Oct 31):
 
 ### Skills + meta
 
-- [ ] **Task 9 — Add a Skills section**
+- [x] **Task 9 — Add a Skills section**
   - Site has no skills section, only tags. Add a simple one, grouped: Back-end / Front-end / DevOps / Platforms.
   - Use the Skills list from `resume.md` only (do `RESUME_CHECKLIST.md` Task 3 first). Includes **AI-assisted SDLC (Claude Code)**.
   - Done when: a recruiter can see the full stack in 5 seconds.
@@ -159,3 +159,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 6 - Offshorly now "Full-Stack Developer" with 2 Facts-confirmed bullets (AuctionTale MVP, team of 4), tags Laravel/Vue; California Ticket King + SBHE merged into one "Independent Full-Stack Contractor", "Freelance / Contract", 2018 - 2023 entry (5 clients, CTK Stripe portal + dashboard, SBHE AngularJS + Laravel APIs).
 - 2026-10-31 - Task 7 - added Gintanao as project #1: "In development" label, 2-sentence description, 3 "built" bullets, tags Next.js/Laravel/Filament, stacked 3-page screenshot, no link; ProjectCard now supports status + highlights.
 - 2026-10-31 - Task 8 - projects cut from 8 to 6 (removed SBHE and the CTK Slim PHP payment portal), reordered Gintanao → ICEI → AuctionTale → CTK Dashboard → Easy BDI → VA Finder; ICEI link removed, "Past project · site since rebranded" label, past tense; all descriptions cut to 2-3 sentences; auctiontale.com checked (200, live). All cards now use the Gintanao format: 1-2 sentence description + 3 "built" bullets.
+- 2026-11-01 - Task 9 - added a Skills section after Experiences (Back-end / Front-end / DevOps / Platforms, incl. AI-assisted SDLC (Claude Code)) plus a Skills nav link; list taken from the updated resume.md Skills (VS Code left out).

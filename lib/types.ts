@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export interface IExperience {
   title: string;
   company: string;
@@ -5,6 +7,17 @@ export interface IExperience {
   duration: string;
   description: string[];
   technologies: string[];
+}
+
+export interface ISkill {
+  name: string;
+  icon: IconType;
+  color: string;
+}
+
+export interface ISkillGroup {
+  group: string;
+  skills: ISkill[];
 }
 
 export interface IProject {

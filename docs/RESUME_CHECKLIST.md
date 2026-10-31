@@ -55,14 +55,14 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 - Years of experience: **10+** (from Mar 2016) ✅
 - LinkedIn URL: https://www.linkedin.com/in/erwin-mark-anora/
 - Portfolio URL: https://erwinmarkanora.vercel.app/ ✅ (already in header)
-- GitHub: https://github.com/solomon0918
+- GitHub: https://github.com/erwinmark-anora (changed from solomon0918 on Nov 1)
 - Born Malta start: **Sep 2025** ✅
 - Born Malta integrations: ✅ yes — keep it **non-specific**: "external APIs and third-party accounting software". No client, government or product names.
 - Born Malta app: ✅ keep as "social-services web application" — don't say government.
 - Born Malta Azure: not sure → **leave out** unless confirmed.
 - Born Malta AI: ✅ company provides Claude; I use **Claude Code** with **my own workflow** (not team-wide). Term: **AI-assisted SDLC** — Claude Code for planning, building, deployment and maintenance.
 - Cloudswyft interns supervised: ✅ **4–5**
-- Cloudswyft's own LMS: ✅ in development, staging only → **no link**. Working name "OrbIT LMS" is **not final → don't name it**; say "Cloudswyft's own learning platform". Stack: **Open edX (Sumac), Python/Django, React micro-frontends (MFEs)**. Role: **sole developer** (1 DevOps teammate).
+- Cloudswyft's own LMS: ✅ in development, staging only → **no link**. Working name "OrbIT LMS" is **not final → don't name it**; say "Cloudswyft's own learning platform". Stack: **Open edX (Sumac), Python/Django, React micro-frontends (MFEs)**. Role: **lead developer** (not "sole": the DevOps teammate sometimes does developer tasks). Resume wording: "Lead development of...".
 - Cloudswyft AI: ✅ same AI-assisted SDLC as Born Malta (Claude Code for planning, building, deployment and maintenance), my own workflow on my personal Claude account (Claude Code). Mention on Cloudswyft's own-platform bullet only.
 - ICEI: ✅ **completely finished**, client has since rebranded. All ICEI bullets → **past tense**. "now supporting 30,000+" → "served 30,000+".
 - Offshorly team: ✅ **4 developers (2 back-end, 2 front-end)**, I was the full-stack lead
@@ -102,20 +102,20 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
   - Claude puts it in `resume.md` in the right reading order: Header → Summary → Experience → Projects (empty) → Skills → Education.
   - No content changes. Done when: `resume.md` matches v2.
 
-- [ ] **Task 2 — Apply the Senior decision**
+- [x] **Task 2 — Apply the Senior decision**
   - Summary: change "Senior full-stack engineer with 10+ years…" → "Full-stack developer with 10+ years…". Keep the rest.
   - Cloudswyft title: keep "Senior Full-Stack Engineer".
   - Check no other place says "Senior".
   - Done when: "Senior" appears only in the Cloudswyft job title.
 
-- [ ] **Task 3 — Update Skills (biggest gap)**
+- [x] **Task 3 — Update Skills (biggest gap)**
   - Put current tools first: Laravel, Livewire, PHP, Python/Django, Vue, React, Next.js, TypeScript.
   - Add missing: **Livewire, Filament, PostgreSQL, MySQL, GitHub Actions, Open edX, Stripe/Xendit, AI-assisted SDLC (Claude Code)** (+ Azure if true). Livewire, GitHub Actions and Xendit are already in your bullets but not in Skills.
   - Remove or shrink: Gatsby, AngularJS, Material UI, Adobe XD.
   - Fix: **"Bitbucker" → "Bitbucket"**, "Typescript" → "TypeScript", "Github" → "GitHub".
   - Done when: skills match what's in the bullets, no typos.
 
-- [ ] **Task 4 — Rewrite Born Malta + Offshorly, small tweaks to the rest**
+- [x] **Task 4 — Rewrite Born Malta + Offshorly, small tweaks to the rest**
   - Use these bullets exactly (all facts confirmed Oct 31). Don't add names, numbers or claims that aren't here.
 
   **Born Malta (full rewrite)** — label: "Contract · Concurrent role". Date: "Sep 2025" (not "Sept").
@@ -147,11 +147,11 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
   **Header:** "FULLSTACK DEVELOPER" → "FULL-STACK DEVELOPER".
   - Done when: no banned words, no unconfirmed brackets left, consistent tense, dates and spelling.
 
-- [ ] **Task 5 — Add LinkedIn + GitHub to the header**
+- [x] **Task 5 — Add LinkedIn + GitHub to the header**
   - Add both links next to phone, email, portfolio.
   - Done when: header has 5 contact items.
 
-- [ ] **Task 6 — Add a short Projects section**
+- [x] **Task 6 — Add a short Projects section**
   - Page 2 has room. 1 entry, 2 lines:
     > **Gintanao** (In development) — Davao real estate listing portal. Next.js front-end, Laravel + Filament back-end and REST API.
   - **No link** until the portal is live (gintanao.com is only a coming-soon page). Add DigitalOcean to the line only after it's deployed there.
@@ -162,7 +162,7 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
   - Watch for: Senior wording, Born Malta title, the contractor block (portfolio lists these as separate jobs with their own dates — fine, but titles must match).
   - Done when: Claude lists zero mismatches.
 
-- [ ] **Task 8 — Fix the layout + rebuild the PDF**
+- [x] **Task 8 — Fix the layout + rebuild the PDF**
   - Switch to **single column**: Header → Summary → Experience → Projects → Skills → Education.
   - Normal headings, **no letter spacing** ("S K I L L S" → "Skills").
   - Keep 2 pages. Standard font, 10–11pt.
@@ -181,3 +181,12 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 
 - 2026-10-31 — v2 — title, summary, Born Malta, Cloudswyft, merged timeline, trimmed to 2 pages (done by Erwin directly).
 - 2026-10-31 - Task 1 - created `docs/resume.md` from the v2 PDF in reading order (Header, Summary, Experience, Projects (empty), Skills, Education); no content changes.
+- 2026-11-01 - Task 2 - Summary now opens "Full-stack developer with 10+ years..."; "Senior" remains only in the Cloudswyft job title.
+- 2026-11-01 - Task 3 - Skills reordered (current stack first), added Livewire, Filament, Open edX, PostgreSQL, MySQL, Stripe, Xendit, GitHub Actions, AI-assisted SDLC (Claude Code); removed Gatsby, AngularJS, Material UI, Adobe XD; fixed Bitbucket, TypeScript, GitHub, GitLab spelling.
+- 2026-11-01 - Task 4 - rewrote Born Malta (5 bullets, "Contract · Concurrent role", Sep 2025), Offshorly (2 bullets) and Cloudswyft (3 bullets); contractor block tweaks (5-client opener, California Ticket King first, Stripe payment portal); header now "FULL-STACK DEVELOPER".
+- 2026-11-01 - Task 5 - added LinkedIn (linkedin.com/in/erwin-mark-anora/) and GitHub (github.com/solomon0918) to the header after the portfolio link; header now has 5 contact items plus location.
+- 2026-11-01 - Task 6 - added Projects entry after Experience: Gintanao (In development), Next.js front-end, Laravel + Filament back-end and REST API; no link, no DigitalOcean yet.
+- 2026-11-01 - Task 8 - single-column layout: centered header with contact on two lines (details, then links), GitHub now github.com/erwinmark-anora, each job title on the same line as its company; rebuilt `docs/Erwin_Mark_Añora_FullStackDeveloper_Resume.pdf` from `resume.md` (v2 look kept: Poppins 10pt, blue headings, bold companies, grey dates; one column, no letter spacing, 2 pages); scan test passes.
+- 2026-11-01 - Cloudswyft bullet 2: "Sole developer of..." -> "Lead development of..." (DevOps teammate also does some dev work); "currently in development" -> "not yet launched"; PDF rebuilt.
+- 2026-11-01 - Task 7 - resume.md vs `develop` portfolio source: titles, dates and Senior wording all match (only diff: "Cloudswyft Global Systems, Inc." vs "Cloudswyft Global Systems"); live site still serves the old `main` experience list, so the live check fails until `develop` is deployed. Box left open; no changes to resume.md.
+- 2026-11-01 - Task 9 - proofread: "backend" -> "back-end" in Summary; portfolio resume buttons (About, Experience) now point to Drive file 1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL; that PDF still says "backend", so box open until the fixed PDF is uploaded there and the live button is checked.

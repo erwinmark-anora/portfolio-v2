@@ -1,5 +1,6 @@
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
@@ -13,6 +14,10 @@ export default function Home() {
 
       <section id="experiences" className="scroll-mt-20 mb-60">
         <Experience />
+      </section>
+
+      <section id="skills" className="scroll-mt-20 mb-60">
+        <Skills />
       </section>
 
       <section id="projects" className="scroll-mt-20 mb-60">

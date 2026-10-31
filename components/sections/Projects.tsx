@@ -1,6 +1,7 @@
 import { IProject } from '@/lib/types';
 import { useMemo } from 'react';
 import ProjectCard from '@/components/common/ProjectCard';
+import Reveal from '@/components/common/Reveal';
 import Link from 'next/link';
 
 const Projects: React.FunctionComponent = () => {
@@ -79,6 +80,7 @@ const Projects: React.FunctionComponent = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-5xl mx-auto">
+        <Reveal>
         <h2 className="text-5xl font-medium mb-12">
           <Link 
             href="#projects"
@@ -88,11 +90,14 @@ const Projects: React.FunctionComponent = () => {
           </Link>
           Projects
         </h2>
+        </Reveal>
         
         <ul>
           {projects.map((item, idx) => (
             <li key={idx}>
-              <ProjectCard project={item} />
+              <Reveal>
+                <ProjectCard project={item} />
+              </Reveal>
             </li>
           ))}
         </ul>

@@ -39,7 +39,7 @@ const About: React.FunctionComponent = () => {
             Hi, I’m Erwin Mark, a full-stack developer with 10+ years of experience, and Laravel is my main stack. I currently build Laravel apps on contract for <span className="text-accent">@Born Malta</span> and work on Open edX learning platforms with Python, Django and React at <span className="text-accent">@Cloudswyft</span>. Before that, I built web apps with Laravel, Vue and React for teams and clients in the US, Singapore and the Philippines. I use an AI-assisted SDLC with Claude Code to plan, build, deploy and maintain, and I review and own all code that ships.
           </p>
 
-          <LinkButton href="https://drive.google.com/file/d/1_zPD4x9E6y9VTcE2GIGpX-1_1Lly9WGn/view">
+          <LinkButton href="https://drive.google.com/file/d/1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL/view">
             Download Resume
           </LinkButton>
         </div>

@@ -4,6 +4,7 @@ import { IExperience } from '@/lib/types';
 import { useMemo, useState } from 'react';
 import ExperienceCard from '@/components/common/ExperienceCard';
 import LinkButton from '@/components/ui/LinkButton';
+import Reveal from '@/components/common/Reveal';
 import Link from 'next/link';
 
 const Experience: React.FunctionComponent = () => {
@@ -27,7 +28,7 @@ const Experience: React.FunctionComponent = () => {
       duration: "Oct 2022 - Present",
       description: [
         'Built the front-end of ICEI\'s Open edX learning platform, which served 30,000+ active learners.',
-        'Sole developer of Cloudswyft\'s own learning platform (Open edX Sumac, Python/Django, React micro-frontends), currently in development, using an AI-assisted SDLC with Claude Code; supervise 4–5 interns building features for it.',
+        'Lead development of Cloudswyft\'s own learning platform (Open edX Sumac, Python/Django, React micro-frontends), not yet launched, using an AI-assisted SDLC with Claude Code; supervise 4–5 interns building features for it.',
         'Maintained ICEI\'s production platform: fixed client-reported issues across the Python/Django and React codebases and resolved Xendit payment and enrollment edge cases, working with DevOps.'
       ],
       technologies: ['Open edX', 'Python', 'Django', 'React', 'Xendit', 'Claude Code']
@@ -61,6 +62,7 @@ const Experience: React.FunctionComponent = () => {
   return (
     <div className="min-h-screen flex items-center justify-center ">
       <div className="max-w-5xl mx-auto">
+        <Reveal>
         <h2 className="text-5xl font-medium mb-12">
           <Link 
             href="#experiences"
@@ -73,10 +75,13 @@ const Experience: React.FunctionComponent = () => {
           </Link>
           Experiences
         </h2>
+        </Reveal>
         <ul className="space-y-12">
           {experiences.map((item: IExperience, index) => (
             <li key={index}>
-              <ExperienceCard experience={item}  />
+              <Reveal>
+                <ExperienceCard experience={item} />
+              </Reveal>
             </li>
           ))}
         </ul>
@@ -86,7 +91,9 @@ const Experience: React.FunctionComponent = () => {
           </div>
 
           <div className="flex-1">
-            <LinkButton href="https://drive.google.com/file/d/1_zPD4x9E6y9VTcE2GIGpX-1_1Lly9WGn/view">View Full Resume</LinkButton>
+            <Reveal>
+              <LinkButton href="https://drive.google.com/file/d/1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL/view">View Full Resume</LinkButton>
+              </Reveal>
           </div>
         </div>
         

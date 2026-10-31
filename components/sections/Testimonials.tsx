@@ -1,4 +1,5 @@
 import TestimonialCard from '@/components/common/TestimonialCard';
+import Reveal from '@/components/common/Reveal';
 import Link from 'next/link';
 
 const Testimonials: React.FunctionComponent = () => {
@@ -18,6 +19,7 @@ const Testimonials: React.FunctionComponent = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-7xl mx-auto">
+        <Reveal>
         <h2 className="text-5xl font-medium pb-10 md:pb-20 mb-10 md:mb-20">
           <Link 
             href="#testimonials"
@@ -27,10 +29,13 @@ const Testimonials: React.FunctionComponent = () => {
           </Link>
           Testimonials
         </h2>
+        </Reveal>
         
         <div className='flex flex-col lg:flex-row gap-6'>
           {testimonials.map((item, idx) => (
-            <TestimonialCard testimonial={item} key={idx} />
+            <Reveal key={idx} delay={idx * 150}>
+              <TestimonialCard testimonial={item} />
+            </Reveal>
           ))}
         </div>
       </div>

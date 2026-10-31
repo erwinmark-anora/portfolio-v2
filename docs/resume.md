@@ -1,80 +1,83 @@
 # ERWIN MARK AÑORA
 
-**FULLSTACK DEVELOPER**
+**FULL-STACK DEVELOPER**
 
-+63 918 383 2520
-erwinmark.anora@gmail.com
-erwinmarkanora.vercel.app/
-Davao City, Philippines
+Davao City, Philippines | +63 918 383 2520 | erwinmark.anora@gmail.com
+
+erwinmarkanora.vercel.app/ | linkedin.com/in/erwin-mark-anora/ | github.com/erwinmark-anora
 
 ## Summary
 
-Senior full-stack engineer with 10+ years building and shipping production web applications. Laravel and Vue at the core, with React and Next.js on the front end and Python for backend and integration work.
+Full-stack developer with 10+ years building and shipping production web applications. Laravel and Vue at the core, with React and Next.js on the front end and Python for back-end and integration work.
 
 ## Experience
 
-### Senior Full-Stack Engineer - Remote
-**Cloudswyft Global Systems, Inc.** - *(Concurrent role)*
-Oct 2022 - Present
+### Senior Full-Stack Engineer - Cloudswyft Global Systems, Inc.
+Remote · Concurrent role · Oct 2022 - Present
 
-- Built and launched the front-end of ICEI's Open edX learning platform, delivering a responsive UI now supporting 30,000+ active learners.
-- Maintaining the production platform's application layer, resolving client-reported issues and debugging across the Python/Django and React codebases to ensure ongoing stability.
-- Maintain and troubleshoot Xendit payment flows, diagnosing and resolving transaction and enrollment edge cases.
-- Collaborate with DevOps on production issues, handling application-side debugging and resolution.
+- Built the front-end of ICEI's Open edX learning platform, which served 30,000+ active learners.
+- Lead development of Cloudswyft's own learning platform (Open edX Sumac, Python/Django, React micro-frontends), not yet launched; supervise 4–5 interns building features for it.
+- Maintained ICEI's production platform: fixed client-reported issues across the Python/Django and React codebases and resolved Xendit payment and enrollment edge cases, working with DevOps.
 
-### Full-Stack Developer - Remote
-**Born Malta (via Webee)** - *(Concurrent role)*
-Sept 2025 - Present
+### Full-Stack Developer - Born Malta (via Webee)
+Remote · Contract · Concurrent role · Sep 2025 - Present
 
-- Own end-to-end development of a social-services / benefits web application using Laravel and JavaScript/jQuery, from feature design through deployment.
-- Work across four concurrent team projects, contributing to and unblocking multiple Laravel codebases beyond primary ownership, including an internal license-management system built with Laravel and Livewire.
-- Integrated AI-assisted development into my workflow using Claude, authoring reusable skills, workflow examples, and CLAUDE.md conventions for faster, more consistent delivery.
-- Manage version control and CI/CD via GitHub and GitHub Actions, maintaining automated build and deployment pipelines.
+- Own end-to-end development of a social-services web application (Laravel, JavaScript), from feature design to deployment.
+- Build and maintain integrations with external APIs and third-party accounting software.
+- Contribute to 4 other Laravel projects, including a license-management system built with Livewire.
+- Apply an AI-assisted SDLC with Claude Code across planning, building, deployment and maintenance, using my own reusable prompts and project rules; I review and own all code that ships.
+- Manage CI/CD pipelines with GitHub Actions.
 
-### Full-Stack Developer - Remote
-**Offshorly** - (Davao City)
-Feb 2022 - Oct 2022
+### Full-Stack Developer - Offshorly
+Remote · Davao City · Feb 2022 - Oct 2022
 
-- Led the technical execution of the Auction Tale platform using VueJS and Laravel 9, successfully accelerating the MVP launch timeline.
-- Managed and mentored a remote development team, establishing code-review standards and eliminating critical technical bottlenecks.
+- Led development of AuctionTale, a real-time bidding platform (Vue, Laravel 9), from build to MVP launch.
+- Led a remote team of 4 developers (2 back-end, 2 front-end) as full-stack lead: planned tasks, reviewed code, and set code-review standards.
 
-### Independent Full-Stack Contractor - Remote
-2018 – 2023
+### Independent Full-Stack Contractor
+Remote · 2018 - 2023
 
-- Delivered full-stack and front-end web applications for international clients across the US and Singapore, using Laravel, Vue, React, and AngularJS.
+- Built web applications for 5 clients in the US, Singapore and the Philippines (Laravel, Vue, React).
+- California Ticket King (US) - Developed a Stripe payment portal (Slim PHP, jQuery) and a Laravel/Vue internal dashboard for customer and transaction management.
 - Easy BDI Course - Built and deployed an LMS with Vue 2 and Laravel; implemented interactive modules, automated exams, and certificate generation.
-- California Ticket King (US) - Developed a secure payment portal (Slim PHP, jQuery) with third-party gateway integration, and a Laravel/Vue internal dashboard for customer and transaction management.
 - Cenote Solutions - Built Pulse modules in React/TypeScript, including an IAM tool for analyzing Qualtrics survey data.
-- VirtualStaff PH - Developed a ReactJS platform matching virtual assistants with employers, with real-time chat and time tracking.
+- VirtualStaff PH - Developed a React platform matching virtual assistants with employers, with real-time chat and time tracking.
 - SBHE PTE LTD (Singapore) - Built an AngularJS project-management app front-end and contributed to Laravel-based APIs.
 
-### Web Developer - On-site
-**Note-e-fied Incorporated** - (Davao City)
-Mar 2017 - Jun 2018
+### Web Developer - Note-e-fied Incorporated
+On-site · Davao City · Mar 2017 - Jun 2018
 
 - Developed and maintained two enterprise web apps (.NET, AngularJS, jQuery), building features and refactoring legacy code in a fast-paced team environment.
 
-### Software Developer - On-site
-**LOGIMINE S.A.S** - (Davao City)
-Mar 2016 - Feb 2017
+### Software Developer - LOGIMINE S.A.S
+On-site · Davao City · Mar 2016 - Feb 2017
 
 - Maintained a JavaEE enterprise application and led development of a fuel management system as project manager and developer.
 
 ## Projects
 
-<!-- Empty for now. Filled in Task 6. -->
+**Gintanao** (In development) - Davao real estate listing portal. Next.js front-end, Laravel + Filament back-end and REST API.
 
 ## Skills
 
 **Programming Languages**
-JavaScript (ES2015+), Typescript, HTML, CSS, PHP, Python, SQL
+PHP, Python, TypeScript, JavaScript (ES2015+), SQL, HTML, CSS
 
 **Libraries & Frameworks**
-- Front-End: VueJS, ReactJS, NextJS, Gatsby, AngularJS, Tailwind CSS, Material UI
-- Back-End: Laravel, PHP, Python/Django
+- Back-End: Laravel, Livewire, Filament, Python/Django, Open edX
+- Front-End: Vue, React, Next.js, Tailwind CSS
+
+**Databases**
+PostgreSQL, MySQL
+
+**Payments**
+Stripe, Xendit
 
 **Tools & Platforms**
-Git, Github, Gitlab, Bitbucker, Docker, Figma, Adobe XD, VS Code, Postman
+Git, GitHub, GitHub Actions, GitLab, Bitbucket, Docker, VS Code, Postman, Figma
+
+**AI**
+AI-assisted SDLC (Claude Code)
 
 ## Education
 
