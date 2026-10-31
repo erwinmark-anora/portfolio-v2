@@ -1,9 +1,14 @@
+import { footer } from '@/content/portfolio';
+
+// The only footer on the site. The year updates on its own.
 const Footer: React.FunctionComponent = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="max-w-7xl mx-auto py-4">
-      <p className="text-center">&copy; {currentYear} Erwin Mark Anora E-Portfolio version 2.0</p>
+    <footer className="mx-auto w-full max-w-content px-gutter">
+      <p className="border-t border-border py-8 text-center text-small text-muted-foreground">
+        &copy; {currentYear} {footer.copyrightName}
+      </p>
     </footer>
   );
 };

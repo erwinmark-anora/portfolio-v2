@@ -19,6 +19,7 @@ const LinkButton: React.FunctionComponent<ILinkButtonProps> = ({
     <a 
       href={href}
       target={target}
+      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
       className={`btn-base btn-${variant} ${className || ''}`}
     >
       {children}
