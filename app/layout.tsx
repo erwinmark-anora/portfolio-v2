@@ -32,15 +32,12 @@ export const metadata: Metadata = {
     siteName: site.name,
     type: 'website',
   },
+  // The preview image comes from app/opengraph-image.tsx; X falls back to og:image.
+  // The favicon comes from app/favicon.ico.
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: siteTitle,
     description: siteDescription,
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
 }
 

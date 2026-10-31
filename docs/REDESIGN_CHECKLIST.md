@@ -108,7 +108,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
 
 ### Polish + launch
 
-- [ ] **Task 10 — Quality check**
+- [x] **Task 10 — Quality check**
   - Check at 360px, 768px and desktop widths.
   - Lighthouse (Chrome DevTools): Performance, Accessibility, SEO **90+**.
   - Keyboard navigation works; images have alt text; colors have enough contrast.
@@ -135,3 +135,4 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 - 2026-11-01 - Task 7 - Gintanao as a big featured glass card first ("In development" pill, stacked screenshots, highlights, tags, no link); other projects in a 1/2/3-column grid of small cards (screenshot, name, 2-line description, tags, link icon when live); no case-study page; build passes.
 - 2026-11-01 - Task 8 - skills as 4 always-visible glass cards (mono group label, chips with small brand icon), tabs/autoplay/slider removed; How I work as a macOS-style window with a Plan/Build/Deploy/Maintain segmented control (click + arrow keys, no autoplay, all steps in HTML); build passes.
 - 2026-11-01 - Task 9 - testimonials as glass quote cards (quote, then small photo + name; stars removed), contact as one centered glass panel with the mailto "Say Hello" button (no form, none existed), single restyled footer with automatic year; build passes.
+- 2026-11-01 - Task 10 - Lighthouse (prod build) mobile 92/100/100/100, desktop 100/100/100/100 (Perf/A11y/Best/SEO); no overflow or fold issues at 360/768/1440, keyboard order and alt text OK; added build-time OG image from content (large preview card), removed 2 broken icon links, header logo alt is now the site name.

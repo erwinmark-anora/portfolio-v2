@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { INavItem } from '@/lib/types';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { navigationItems } from '@/content/portfolio';
+import { navigationItems, site } from '@/content/portfolio';
 
 const Navbar: React.FunctionComponent = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -65,7 +65,7 @@ const Navbar: React.FunctionComponent = () => {
         >
           <Image
             src="/logo.png"
-            alt="Logo"
+            alt={site.name}
             width={40}
             height={40}
             className="rounded-full"
