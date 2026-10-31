@@ -54,7 +54,7 @@ export default function RootLayout({
       >
         <CursorBackground />
         <Navbar />
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="mx-auto w-full max-w-content px-gutter">{children}</main>
         <Footer />
       </body>
     </html>

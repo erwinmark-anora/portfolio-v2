@@ -25,8 +25,9 @@ export const links = {
 export const navigationItems: INavItem[] = [
   { href: '#about', label: 'About' },
   { href: '#experiences', label: 'Experiences' },
-  { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#how-i-work', label: 'How I work' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact' },
 ];

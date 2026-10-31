@@ -73,7 +73,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
   - Add dark mode if the brief says so.
   - Done when: changing the accent color in one place changes it everywhere.
 
-- [ ] **Task 4 — Layout + navigation**
+- [x] **Task 4 — Layout + navigation**
   - Section order: Hero → Experience → Projects → Skills → How I work (AI-assisted SDLC) → Testimonials → Contact.
   - Sticky header with section links; simple mobile menu.
   - Done when: navigation works on phone and desktop.
@@ -129,3 +129,4 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 - 2026-11-01 - Task 1 - brief filled: minimal macOS-like feel, dark only, Nunito + JetBrains Mono, teal accent, interactive How I work window.
 - 2026-11-01 - Task 2 - all content moved to content/portfolio.ts, components read from it; built HTML has identical visible text, no visual change.
 - 2026-11-01 - Task 3 - dark-only tokens in app/globals.css (one --accent #0FA4AF drives all accent shades), Nunito + JetBrains Mono, type scale, spacing, radius, glass utility, reduced-motion rule.
+- 2026-11-01 - Task 4 - sections reordered (Hero, Experience, Projects, Skills, How I work, Testimonials, Contact), new glass sticky header with scrollspy and a simple drop-down mobile menu (Escape closes), build passes.
