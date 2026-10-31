@@ -1,32 +1,23 @@
 import TestimonialCard from '@/components/common/TestimonialCard';
 import Reveal from '@/components/common/Reveal';
-import Link from 'next/link';
 import { testimonials } from '@/content/portfolio';
 
 const Testimonials: React.FunctionComponent = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-7xl mx-auto">
-        <Reveal>
-        <h2 className="text-5xl font-medium pb-10 md:pb-20 mb-10 md:mb-20">
-          <Link 
-            href="#testimonials"
-            className={`text-primary-light text-7xl font-bold mr-1 hover:text-accent transition-colors duration-300 cursor-pointer`}
-          >
-            #
-          </Link>
-          {testimonials.heading}
-        </h2>
-        </Reveal>
-        
-        <div className='flex flex-col lg:flex-row gap-6'>
-          {testimonials.items.map((item, idx) => (
-            <Reveal key={idx} delay={idx * 150}>
+    <div>
+      <Reveal>
+        <h2 className="mb-10 text-heading font-bold tracking-tight">{testimonials.heading}</h2>
+      </Reveal>
+
+      <ul className="grid gap-6 md:grid-cols-2">
+        {testimonials.items.map((item, idx) => (
+          <li key={item.name}>
+            <Reveal delay={idx * 100} className="h-full">
               <TestimonialCard testimonial={item} />
             </Reveal>
-          ))}
-        </div>
-      </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

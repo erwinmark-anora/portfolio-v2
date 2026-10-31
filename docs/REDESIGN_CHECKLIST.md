@@ -100,7 +100,7 @@ Why this order: the redesign is the part most likely to drag on. If it does, the
   - Done when: full stack readable in 5 seconds.
   - Also style the **How I work** section here: 4 steps (Plan → Build → Deploy → Maintain) as a simple row or numbered list. No diagrams or animations needed.
 
-- [ ] **Task 9 — Testimonials, contact, footer**
+- [x] **Task 9 — Testimonials, contact, footer**
   - Testimonials: clean quote cards.
   - Contact: email button (and form only if it already works).
   - One footer, automatic year.
@@ -134,3 +134,4 @@ _One line per finished task. Example: `2026-12-01 — Task 2 — all content mov
 - 2026-11-01 - Task 6 - experience as a vertical timeline of glass cards (dates, label pill, title, company, bullets, mono tech tags); the two concurrent roles share one timeline point in a framed side-by-side group (stacked on phone); build passes.
 - 2026-11-01 - Task 7 - Gintanao as a big featured glass card first ("In development" pill, stacked screenshots, highlights, tags, no link); other projects in a 1/2/3-column grid of small cards (screenshot, name, 2-line description, tags, link icon when live); no case-study page; build passes.
 - 2026-11-01 - Task 8 - skills as 4 always-visible glass cards (mono group label, chips with small brand icon), tabs/autoplay/slider removed; How I work as a macOS-style window with a Plan/Build/Deploy/Maintain segmented control (click + arrow keys, no autoplay, all steps in HTML); build passes.
+- 2026-11-01 - Task 9 - testimonials as glass quote cards (quote, then small photo + name; stars removed), contact as one centered glass panel with the mailto "Say Hello" button (no form, none existed), single restyled footer with automatic year; build passes.
