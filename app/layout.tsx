@@ -16,9 +16,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteTitle = 'Erwin Mark Añora | Full-Stack Developer, Laravel First';
+const siteDescription = 'Full-stack developer with 10+ years building web apps from database to deployment. Laravel and Livewire, Vue, React, Next.js and Python/Django.';
+
 export const metadata: Metadata = {
-  title: 'Erwin Mark Añora | Full Stack Developer Portfolio',
-  description: 'Full Stack Developer Erwin Mark Añora showcases projects and skills in Laravel, Vue, React, and TailwindCSS.',
+  metadataBase: new URL('https://erwinmarkanora.vercel.app'),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: '/',
+    siteName: 'Erwin Mark Añora',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: siteTitle,
+    description: siteDescription,
+  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

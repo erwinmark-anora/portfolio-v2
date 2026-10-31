@@ -126,7 +126,7 @@ Quick reference (from resume v2, Oct 31):
   - End with one line: "I review and own all code that ships."
   - Done when: 4 short lines + closing line, readable in 10 seconds. This is also the example you'll walk through in interviews.
 
-- [ ] **Task 10 — Update page title + meta description**
+- [x] **Task 10 — Update page title + meta description**
   - Current meta says "Laravel, Vue, React, and TailwindCSS". Update to match the new headline and stack.
   - Check the Open Graph image/title (how the link looks when shared on LinkedIn).
   - Done when: meta matches the new positioning.
@@ -161,3 +161,4 @@ _One line per finished task. Example: `2026-11-01 — Task 1 — merged footers,
 - 2026-10-31 - Task 8 - projects cut from 8 to 6 (removed SBHE and the CTK Slim PHP payment portal), reordered Gintanao → ICEI → AuctionTale → CTK Dashboard → Easy BDI → VA Finder; ICEI link removed, "Past project · site since rebranded" label, past tense; all descriptions cut to 2-3 sentences; auctiontale.com checked (200, live). All cards now use the Gintanao format: 1-2 sentence description + 3 "built" bullets.
 - 2026-11-01 - Task 9 - added a Skills section after Experiences (Back-end / Front-end / DevOps / Platforms, incl. AI-assisted SDLC (Claude Code)) plus a Skills nav link; list taken from the updated resume.md Skills (VS Code left out).
 - 2026-11-01 - Task 9a - added a "How I work" section after Skills: 4 cards (Plan / Build / Deploy / Maintain) from Erwin's own workflow, kept general (no tool or vendor names, Claude framed as a tool), closing line "I review and own all code that ships."; no nav link.
+- 2026-11-01 - Task 10 - new page title and meta description (Laravel-first, 10+ years, current stack), added metadataBase + Open Graph and Twitter title/description; no OG image exists yet, so LinkedIn shows a text-only card.
