@@ -157,7 +157,7 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
   - **No link** until the portal is live (gintanao.com is only a coming-soon page). Add DigitalOcean to the line only after it's deployed there.
   - Done when: one short project entry after Experience.
 
-- [ ] **Task 7 — Consistency check vs portfolio**
+- [x] **Task 7 — Consistency check vs portfolio**
   - Compare `resume.md` against the live portfolio: every job title, company name, and date must match.
   - Watch for: Senior wording, Born Malta title, the contractor block (portfolio lists these as separate jobs with their own dates — fine, but titles must match).
   - Done when: Claude lists zero mismatches.
@@ -190,3 +190,4 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 - 2026-11-01 - Cloudswyft bullet 2: "Sole developer of..." -> "Lead development of..." (DevOps teammate also does some dev work); "currently in development" -> "not yet launched"; PDF rebuilt.
 - 2026-11-01 - Task 7 - resume.md vs `develop` portfolio source: titles, dates and Senior wording all match (only diff: "Cloudswyft Global Systems, Inc." vs "Cloudswyft Global Systems"); live site still serves the old `main` experience list, so the live check fails until `develop` is deployed. Box left open; no changes to resume.md.
 - 2026-11-01 - Task 9 - proofread: "backend" -> "back-end" in Summary; portfolio resume buttons (About, Experience) now point to Drive file 1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL; that PDF still says "backend", so box open until the fixed PDF is uploaded there and the live button is checked.
+- 2026-11-01 - Task 7 (recheck) - live site now shows the new experience list; all 4 portfolio jobs match resume.md on title, company and dates (only "Inc." dropped from Cloudswyft on the site, accepted); box ticked.

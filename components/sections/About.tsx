@@ -14,21 +14,21 @@ const socialLinks = [
 const About: React.FunctionComponent = () => {
   return (
     <div className="pb-section">
-      <div className="flex flex-col items-center justify-center py-16 text-center sm:py-24 lg:min-h-[calc(100svh-4rem)]">
-        <h1 className="text-hero font-extrabold tracking-tight text-balance">
+      <div className="hero-intro relative flex flex-col items-center justify-center py-16 text-center sm:py-24 lg:min-h-[calc(100svh-4rem)]">
+        <h1 className="hero-arrive text-hero font-extrabold tracking-tight text-balance">
           {about.name}
         </h1>
 
         <RotatingText
           items={about.roles}
-          className="mt-4 block text-[clamp(1.375rem,1rem+1.6vw,2.375rem)] font-semibold text-accent"
+          className="hero-arrive hero-delay-1 mt-4 block text-[clamp(1.375rem,1rem+1.6vw,2.375rem)] font-semibold text-accent"
         />
 
-        <p className="mt-5 max-w-xl text-lead text-muted-foreground text-balance">
+        <p className="hero-arrive hero-delay-2 mt-5 max-w-xl text-lead text-muted-foreground text-balance">
           {about.summary}
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+        <div className="hero-arrive hero-delay-3 mt-10 flex flex-wrap items-center justify-center gap-3">
           <LinkButton href={links.resume} variant="primary">
             {about.resumeLabel}
           </LinkButton>
@@ -37,7 +37,7 @@ const About: React.FunctionComponent = () => {
           </LinkButton>
         </div>
 
-        <ul className="mt-6 flex items-center gap-1">
+        <ul className="hero-arrive hero-delay-3 mt-6 flex items-center gap-1">
           {socialLinks.map(({ href, label, icon: Icon }) => (
             <li key={href}>
               <a
@@ -52,6 +52,11 @@ const About: React.FunctionComponent = () => {
             </li>
           ))}
         </ul>
+
+        <a href="#experiences" aria-label="Explore my experience" className="hero-scroll mt-10 flex flex-col items-center gap-3 rounded-md p-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring lg:absolute lg:bottom-7 lg:mt-0">
+          <span>Scroll to explore</span>
+          <span aria-hidden="true" className="scroll-line" />
+        </a>
       </div>
 
       {/* The intro as a macOS terminal window. The prompts are decoration; the paragraph is real text. */}

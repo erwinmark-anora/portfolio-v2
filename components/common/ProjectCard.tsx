@@ -26,7 +26,7 @@ const Tags: React.FunctionComponent<{ items: string[] }> = ({ items }) => (
 // The featured project: bigger card with screenshot beside the text on desktop, plus highlights.
 export const FeaturedProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) => {
   return (
-    <article className="glass grid gap-6 p-card lg:grid-cols-5 lg:gap-8">
+    <article className="project-card glass grid gap-6 p-card lg:grid-cols-5 lg:gap-8">
       <div className="lg:col-span-3">
         <ProjectGallery project={project} sizes="(min-width: 1024px) 640px, 100vw" />
       </div>
@@ -59,7 +59,7 @@ export const FeaturedProjectCard: React.FunctionComponent<IProjectCardProps> = (
 // A regular project: screenshot, name, one or two lines, tags, and a link when the site is live.
 const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) => {
   return (
-    <article className="glass flex h-full flex-col p-4 transition-colors duration-300 hover:border-accent/40">
+    <article className="project-card glass flex h-full flex-col p-4">
       <ProjectGallery project={project} sizes="(min-width: 1024px) 340px, (min-width: 640px) 50vw, 100vw" />
 
       <div className="mt-4 flex flex-1 flex-col">

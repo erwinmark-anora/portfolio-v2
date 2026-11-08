@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import CursorBackground  from "@/components/layouts/CursorBackground ";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import Wallpaper from "@/components/layouts/Wallpaper";
@@ -49,10 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${jetbrainsMono.variable} font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-accent-foreground`}
+        className={`${nunito.variable} ${jetbrainsMono.variable} isolate font-sans antialiased bg-background text-foreground selection:bg-accent selection:text-accent-foreground`}
       >
         <Wallpaper />
-        <CursorBackground />
         <Navbar />
         <main className="mx-auto w-full max-w-content px-gutter">{children}</main>
         <Footer />
