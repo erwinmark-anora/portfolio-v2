@@ -146,8 +146,253 @@
   -webkit-backdrop-filter: blur(var(--blur-glass)) saturate(140%);
 }
 
-/* Small effects only, and none when the user has "reduce motion" on. */
+/* Architectural drafting: quiet at the edges, clear behind the content. */
+.architectural-wallpaper {
+  --pointer-x: 70%;
+  --pointer-y: 28%;
+  --sketch-x: 0px;
+  --sketch-y: 0px;
+}
+
+.drafting-grid {
+  background-image:
+    linear-gradient(rgb(142 188 192 / 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(142 188 192 / 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 65% 35%, black, transparent 80%);
+}
+
+.sketch-parallax {
+  transform: translate3d(var(--sketch-x), var(--sketch-y), 0);
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.building-position {
+  position: absolute;
+  top: -9vh;
+  right: -15vw;
+  width: min(75vw, 1080px);
+  opacity: 0.44;
+  mask-image: linear-gradient(110deg, transparent 3%, black 45%);
+}
+
+.plan-position {
+  position: absolute;
+  bottom: -15vh;
+  left: -13vw;
+  width: min(53vw, 720px);
+  opacity: 0.25;
+  transform: rotate(-16deg);
+  mask-image: linear-gradient(40deg, black 35%, transparent 90%);
+}
+
+.building-sketch,
+.floor-plan {
+  width: 100%;
+  overflow: visible;
+  stroke: #9bb9bd;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.building-sketch {
+  animation: sketch-float 10s ease-in-out infinite alternate;
+}
+
+.floor-plan {
+  animation: plan-float 12s ease-in-out infinite alternate;
+}
+
+.sketch-guides {
+  opacity: 0.25;
+  stroke-width: 0.65;
+  stroke-dasharray: 5 9;
+}
+
+.sketch-structure { opacity: 0.75; }
+.sketch-dimensions { opacity: 0.5; stroke-width: 0.7; }
+.sketch-hatching { opacity: 0.3; stroke-width: 0.6; }
+.sketch-accent { stroke: var(--accent); opacity: 0.85; }
+.sketch-notes { opacity: 0.5; stroke-width: 0.7; }
+.sketch-nodes { fill: var(--accent); stroke: none; }
+.sketch-underdrawing { opacity: 0.28; }
+
+.sketch-redraw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: sketch-redraw 16s ease-in-out infinite both;
+}
+
+.sketch-rings circle {
+  stroke: var(--accent);
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  animation: sketch-ring 5s ease-out infinite;
+}
+
+.sketch-rings circle:nth-child(2) { animation-delay: 2.5s; }
+.floor-plan .sketch-rings circle { animation-delay: 1.5s; }
+.floor-plan .sketch-rings circle:nth-child(2) { animation-delay: 4s; }
+
+.sketch-dimensions text,
+.sketch-notes text {
+  fill: #9bb9bd;
+  stroke: none;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+
+.sketch-draw {
+  stroke-dasharray: 2600;
+  stroke-dashoffset: 0;
+  animation: sketch-draw 3.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.sketch-accent.sketch-draw { animation-delay: 0.4s; }
+.floor-plan .sketch-draw { animation-delay: 0.6s; }
+
+.sketch-trace {
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 0.08 0.92;
+  animation: sketch-trace 9s linear infinite;
+  opacity: 0.7;
+}
+
+.sketch-trace-secondary {
+  stroke-width: 1.5;
+  animation-duration: 11s;
+  animation-delay: -4s;
+}
+
+.floor-plan .sketch-trace { animation-direction: reverse; }
+
+.drafting-light {
+  background:
+    radial-gradient(ellipse 40% 42% at 50% 45%, rgb(11 15 20 / 0.8), transparent 100%),
+    radial-gradient(ellipse 60% 65% at 50% 0%, rgb(255 255 255 / 0.035), transparent 75%),
+    radial-gradient(400px at var(--pointer-x) var(--pointer-y), color-mix(in oklab, var(--accent) 5%, transparent), transparent 80%);
+}
+
+.drafting-grain {
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.hero-arrive {
+  animation: hero-arrive 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.hero-delay-1 { animation-delay: 100ms; }
+.hero-delay-2 { animation-delay: 200ms; }
+.hero-delay-3 { animation-delay: 300ms; }
+
+.scroll-line {
+  position: relative;
+  height: 36px;
+  width: 1px;
+  overflow: hidden;
+  background: var(--border);
+}
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, var(--accent));
+  animation: scroll-line 2.6s ease-in-out infinite;
+}
+
+.project-card {
+  transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+}
+.project-card:focus-within { border-color: var(--accent); }
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: color-mix(in oklab, var(--accent) 40%, transparent);
+    box-shadow: var(--shadow-glass), 0 12px 40px -20px var(--accent-glow);
+  }
+}
+
+@keyframes sketch-draw {
+  from { stroke-dashoffset: 2600; opacity: 0; }
+}
+@keyframes sketch-float {
+  from { transform: translate3d(0, 4px, 0) rotate(-0.8deg); }
+  to { transform: translate3d(-10px, -18px, 0) rotate(0.8deg); }
+}
+@keyframes plan-float {
+  from { transform: translate3d(0, -6px, 0) rotate(0deg); }
+  to { transform: translate3d(12px, 10px, 0) rotate(1.5deg); }
+}
+@keyframes sketch-redraw {
+  0% { stroke-dashoffset: 1; opacity: 0; }
+  16%, 72% { stroke-dashoffset: 0; opacity: 1; }
+  90%, 100% { stroke-dashoffset: -1; opacity: 0; }
+}
+@keyframes sketch-trace {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes sketch-ring {
+  0% { transform: scale(0.5); opacity: 0; }
+  15% { opacity: 0.8; }
+  65%, 100% { transform: scale(2.4); opacity: 0; }
+}
+@keyframes hero-arrive {
+  from { opacity: 0; transform: translateY(18px); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@keyframes scroll-line {
+  0% { transform: translateY(-100%); }
+  60%, 100% { transform: translateY(100%); }
+}
+
+@media (max-width: 639px) {
+  .building-position {
+    top: 0;
+    right: -57vw;
+    width: 130vw;
+    opacity: 0.3;
+  }
+  .plan-position {
+    bottom: -2vh;
+    left: -42vw;
+    width: 100vw;
+    opacity: 0.18;
+  }
+  .drafting-grid { background-size: 40px 40px; }
+}
+
+/* The visitor can pause decorative motion without changing their OS preference. */
+html[data-motion='paused'] *,
+html[data-motion='paused'] *::before,
+html[data-motion='paused'] *::after {
+  animation-play-state: paused !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+html[data-motion='paused'] .hero-arrive,
+html[data-motion='paused'] .sketch-draw,
+html[data-motion='paused'] .sketch-redraw {
+  animation: none !important;
+}
+html[data-motion='paused'] .project-card:hover { transform: none; }
+
+/* Keep a finished, static composition when the user requests reduced motion. */
 @media (prefers-reduced-motion: reduce) {
+  .motion-toggle { display: none; }
+  .sketch-trace,
+  .sketch-rings { display: none; }
+  .sketch-draw,
+  .sketch-redraw,
+  .building-sketch,
+  .floor-plan { animation: none; }
+  .project-card:hover { transform: none; }
   *,
   *::before,
   *::after {

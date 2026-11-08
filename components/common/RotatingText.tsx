@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useMotionPreference } from '@/lib/useMotionPreference';
 
 interface IRotatingTextProps {
   items: string[];
@@ -10,16 +11,17 @@ interface IRotatingTextProps {
 
 // Rolls through the items: the current one slides up and blurs out while the next rises in.
 // Every item sits in the same grid cell, so the box keeps the widest item's width and nothing jumps.
-// Stays on the first item when "reduce motion" is on. Screen readers get the full list once, not the rolling.
+// Stops rolling when motion is paused or reduced. Screen readers get the full list once.
 const RotatingText: React.FunctionComponent<IRotatingTextProps> = ({ items, interval = 2600, className = '' }) => {
   const [active, setActive] = useState<number>(0);
+  const motionEnabled = useMotionPreference();
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!motionEnabled || items.length < 2) return;
 
     const timer = window.setInterval(() => setActive((i) => (i + 1) % items.length), interval);
     return () => window.clearInterval(timer);
-  }, [items.length, interval]);
+  }, [items.length, interval, motionEnabled]);
 
   return (
     <span className={className}>
