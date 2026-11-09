@@ -4,7 +4,7 @@
 
 Davao City, Philippines | +63 918 383 2520 | erwinmark.anora@gmail.com
 
-erwinmarkanora.vercel.app/ | linkedin.com/in/erwin-mark-anora/ | github.com/erwinmark-anora
+erwinmark.dev | linkedin.com/in/erwin-mark-anora/ | github.com/erwinmark-anora
 
 ## Summary
 

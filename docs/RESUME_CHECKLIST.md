@@ -54,7 +54,7 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 - Senior decision: ✅ decided (see the box above).
 - Years of experience: **10+** (from Mar 2016) ✅
 - LinkedIn URL: https://www.linkedin.com/in/erwin-mark-anora/
-- Portfolio URL: https://erwinmarkanora.vercel.app/ ✅ (already in header)
+- Portfolio URL: https://erwinmark.dev ✅ (already in header)
 - GitHub: https://github.com/erwinmark-anora (changed from solomon0918 on Nov 1)
 - Born Malta start: **Sep 2025** ✅
 - Born Malta integrations: ✅ yes — keep it **non-specific**: "external APIs and third-party accounting software". No client, government or product names.
@@ -191,3 +191,5 @@ Titles, dates and bullets are already in the resume — **`resume.md` is the sou
 - 2026-11-01 - Task 7 - resume.md vs `develop` portfolio source: titles, dates and Senior wording all match (only diff: "Cloudswyft Global Systems, Inc." vs "Cloudswyft Global Systems"); live site still serves the old `main` experience list, so the live check fails until `develop` is deployed. Box left open; no changes to resume.md.
 - 2026-11-01 - Task 9 - proofread: "backend" -> "back-end" in Summary; portfolio resume buttons (About, Experience) now point to Drive file 1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL; that PDF still says "backend", so box open until the fixed PDF is uploaded there and the live button is checked.
 - 2026-11-01 - Task 7 (recheck) - live site now shows the new experience list; all 4 portfolio jobs match resume.md on title, company and dates (only "Inc." dropped from Cloudswyft on the site, accepted); box ticked.
+
+- 2026-11-09 - Updated the portfolio address and PDF hyperlink to https://erwinmark.dev; recentered the header links, preserved the two-page layout and all other PDF content, and synchronized resume.md. Google Drive version replacement remains pending.
