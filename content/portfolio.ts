@@ -16,7 +16,7 @@ export const site = {
 };
 
 export const links = {
-  resume: 'https://drive.google.com/file/d/1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL/view',
+  resume: 'https://drive.google.com/file/d/1l9LgHrubxfBEzhZjIX-eXz9k2GV9ftLL/view?usp=drive_link',
   github: 'https://github.com/solomon0918',
   linkedin: 'https://www.linkedin.com/in/erwin-mark-anora/',
   email: 'mailto:erwinmark.anora@gmail.com',
