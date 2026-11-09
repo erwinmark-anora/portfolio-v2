@@ -1,9 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { PauseIcon, PlayIcon } from '@heroicons/react/16/solid';
 import { BuildingSketch, FloorPlan } from '@/components/common/ArchitecturalSketch';
-import { motionPreferenceEvent, useMotionPreference } from '@/lib/useMotionPreference';
+import { useMotionPreference } from '@/lib/useMotionPreference';
 
 export default function Wallpaper() {
   const ref = useRef<HTMLDivElement>(null);
@@ -41,31 +40,15 @@ export default function Wallpaper() {
     };
   }, [motionEnabled]);
 
-  const toggleMotion = () => {
-    document.documentElement.dataset.motion = motionEnabled ? 'paused' : 'active';
-    window.dispatchEvent(new Event(motionPreferenceEvent));
-  };
-
   return (
-    <>
-      <div ref={ref} aria-hidden="true" className="architectural-wallpaper pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <div className="drafting-grid absolute inset-0" />
-        <div className="sketch-parallax absolute inset-0">
-          <div className="building-position"><BuildingSketch /></div>
-          <div className="plan-position"><FloorPlan /></div>
-        </div>
-        <div className="drafting-light absolute inset-0" />
-        <div className="drafting-grain absolute inset-0" />
+    <div ref={ref} aria-hidden="true" className="architectural-wallpaper pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div className="drafting-grid absolute inset-0" />
+      <div className="sketch-parallax absolute inset-0">
+        <div className="building-position"><BuildingSketch /></div>
+        <div className="plan-position"><FloorPlan /></div>
       </div>
-      <button
-        type="button"
-        onClick={toggleMotion}
-        aria-label={motionEnabled ? 'Pause decorative motion' : 'Resume decorative motion'}
-        className="motion-toggle fixed bottom-5 left-4 z-20 flex items-center gap-2 rounded-full border border-border bg-background/85 px-3 py-2 font-mono text-[10px] text-muted-foreground backdrop-blur-md transition-colors hover:border-accent/40 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring sm:left-6"
-      >
-        {motionEnabled ? <PauseIcon className="h-3 w-3" /> : <PlayIcon className="h-3 w-3" />}
-        <span>{motionEnabled ? 'Pause motion' : 'Resume motion'}</span>
-      </button>
-    </>
+      <div className="drafting-light absolute inset-0" />
+      <div className="drafting-grain absolute inset-0" />
+    </div>
   );
 }

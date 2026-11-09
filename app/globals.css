@@ -385,7 +385,6 @@ html[data-motion='paused'] .project-card:hover { transform: none; }
 
 /* Keep a finished, static composition when the user requests reduced motion. */
 @media (prefers-reduced-motion: reduce) {
-  .motion-toggle { display: none; }
   .sketch-trace,
   .sketch-rings { display: none; }
   .sketch-draw,

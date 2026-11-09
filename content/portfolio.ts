@@ -9,7 +9,7 @@ import {
 } from 'react-icons/si';
 
 export const site = {
-  url: 'https://erwinmarkanora.vercel.app',
+  url: 'https://erwinmark.dev',
   name: 'Erwin Mark Añora',
   title: 'Erwin Mark Añora | Full-Stack Developer',
   description: 'Full-stack developer with 10+ years building web apps from database to deployment. Laravel and Livewire, Vue, React, Next.js and Python/Django.',
