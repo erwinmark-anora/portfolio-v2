@@ -196,6 +196,19 @@ export const projects = {
   heading: 'Projects',
   items: [
     {
+      title: "Davao Real Properties For Sale",
+      image: "/images/projects/davao-real-properties/stack-current.png",
+      screenshots: [
+        "/images/projects/davao-real-properties/home-current.png",
+        "/images/projects/davao-real-properties/listings-current.png",
+        "/images/projects/davao-real-properties/listing-current.png",
+      ],
+      status: "Live",
+      description: "A real estate website for the Davao region. Buyers browse properties by location, type and budget, save favorites, and request a viewing with a local agent.",
+      technologies: ["Next.js", "React", "CSS"],
+      link: "https://davaorealpropertiesforsale.com/",
+    },
+    {
       title: "Gintanao",
       image: "/images/projects/gintanao/stack.png",
       screenshots: [
