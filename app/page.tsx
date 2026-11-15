@@ -5,12 +5,26 @@ import HowIWork from "@/components/sections/HowIWork";
 import Projects from "@/components/sections/Projects";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
+import { site } from "@/content/portfolio";
+
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: site.name,
+  url: site.url,
+};
 
 // Section order: Hero → Experience → Projects → Skills → How I work → Testimonials → Contact.
 // scroll-mt keeps headings clear of the sticky header when jumping to a section.
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteStructuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <section id="about" className="scroll-mt-20">
         <About />
       </section>

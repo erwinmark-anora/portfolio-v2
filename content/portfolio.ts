@@ -203,9 +203,8 @@ export const projects = {
         "/images/projects/davao-real-properties/listings-current.png",
         "/images/projects/davao-real-properties/listing-current.png",
       ],
-      status: "Live",
       description: "A real estate website for the Davao region. Buyers browse properties by location, type and budget, save favorites, and request a viewing with a local agent.",
-      technologies: ["Next.js", "React", "CSS"],
+      technologies: ["Next.js", "React", "PayloadCMS", "CSS"],
       link: "https://davaorealpropertiesforsale.com/",
     },
     {
