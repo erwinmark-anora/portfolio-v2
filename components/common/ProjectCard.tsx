@@ -56,13 +56,15 @@ export const FeaturedProjectCard: React.FunctionComponent<IProjectCardProps> = (
   );
 };
 
-// A regular project: screenshot, name, one or two lines, tags, and a link when the site is live.
+// A regular project: screenshot, name, full description, tags, and a link when the site is live.
 const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) => {
   return (
     <article className="project-card glass flex h-full flex-col p-4">
-      <ProjectGallery project={project} sizes="(min-width: 1024px) 340px, (min-width: 640px) 50vw, 100vw" />
+      <div className="shrink-0">
+        <ProjectGallery project={project} sizes="(min-width: 1024px) 340px, (min-width: 640px) 50vw, 100vw" />
+      </div>
 
-      <div className="mt-4 flex flex-1 flex-col">
+      <div className="mt-4 flex min-w-0 flex-1 flex-col">
         {project.status && <div className="mb-2"><Status text={project.status} /></div>}
 
         <h3 className="text-subheading font-bold">
@@ -81,7 +83,7 @@ const ProjectCard: React.FunctionComponent<IProjectCardProps> = ({ project }) =>
           )}
         </h3>
 
-        <p className="mt-2 line-clamp-2 text-small text-muted-foreground">{project.description}</p>
+        <p className="mt-2 text-small break-words text-muted-foreground">{project.description}</p>
 
         <div className="mt-auto pt-4">
           <Tags items={project.technologies} />

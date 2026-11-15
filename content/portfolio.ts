@@ -203,7 +203,7 @@ export const projects = {
         "/images/projects/davao-real-properties/listings-current.png",
         "/images/projects/davao-real-properties/listing-current.png",
       ],
-      description: "A real estate website for the Davao region. Buyers browse properties by location, type and budget, save favorites, and request a viewing with a local agent.",
+      description: "A real estate website for the Davao region, built with Next.js, React and PayloadCMS. Buyers filter properties by location, type, price and bedrooms, browse photo galleries, and save favorites. Listing pages show prices, floor areas, amenities and area maps, with an inquiry form for property questions and viewing requests.",
       technologies: ["Next.js", "React", "PayloadCMS", "CSS"],
       link: "https://davaorealpropertiesforsale.com/",
     },
@@ -250,7 +250,7 @@ export const projects = {
         "/images/projects/auctiontale/auction-search.png",
         "/images/projects/auctiontale/admin.png",
       ],
-      description: "An auction platform for vintage collectibles. Sellers list items, buyers bid in real time, and admins approve and schedule auctions.",
+      description: "An auction platform for vintage collectibles. Sellers list items, buyers bid in real time, and admins approve and schedule auctions. Led the Vue and Laravel build at Offshorly through MVP launch, coordinating two front-end and two back-end developers. As full-stack lead, planned tasks, reviewed code and set code-review standards for the team.",
       highlights: [
         "Led development with Vue and Laravel 9 at Offshorly, from build to MVP launch.",
         "Led a team of 4 developers (2 back-end, 2 front-end) as full-stack lead.",
@@ -267,7 +267,7 @@ export const projects = {
         "/images/projects/dashboard-california-ticket-king/cases.png",
         "/images/projects/dashboard-california-ticket-king/courthouses.png",
       ],
-      description: "An internal dashboard for California Ticket King's attorneys and staff, built with Vue and Laravel.",
+      description: "An internal dashboard for California Ticket King's attorneys and staff, built with Vue and Laravel. Staff track client cases, assign courthouses to attorneys, and manage users and payment coupons. Delivered for a US client as an independent contractor, alongside a separate Slim PHP and jQuery portal for Stripe payments.",
       highlights: [
         "Built case management: create and track client cases, and assign courthouses to attorneys.",
         "Built user management and payment coupons.",
@@ -283,7 +283,7 @@ export const projects = {
         "/images/projects/easy-bdi/course-quiz.png",
         "/images/projects/easy-bdi/exam.png",
       ],
-      description: "A learning platform for people taking BDI courses.",
+      description: "A learning platform for people taking BDI courses, built and deployed with Vue 2 and Laravel. Learners work through interactive modules, timed chapter quizzes and automated exams, then receive a certificate when they pass. The quiz interface shows completed, ongoing and upcoming chapters alongside the questions and countdown timer.",
       highlights: [
         "Built and deployed the platform with Vue 2 and Laravel.",
         "Built interactive learning modules and automated exams.",
@@ -299,7 +299,7 @@ export const projects = {
         "/images/projects/virtualstafffinder/knowledge-base.png",
         "/images/projects/virtualstafffinder/enterprise.png",
       ],
-      description: "A platform that matches virtual assistants with employers.",
+      description: "A platform that matches virtual assistants with employers, rebuilt from scratch in React. Dedicated dashboards support job posts and applications, with real-time chat and time tracking. A searchable employer knowledge base provides help with hiring, task management, billing and account settings for teams managing remote staff.",
       highlights: [
         "Rebuilt the app from scratch in React.",
         "Built dashboards for employers and job seekers, with job posts and application management.",
